@@ -1,0 +1,45 @@
+{% extends "catalog/base.html" %}
+
+{% block title %}
+    {{ product.name }}
+{% endblock %}
+
+{% block content %}
+    <div class="flex flex-wrap justify-between gap-3 p-4">
+        <div class="flex min-w-72 flex-col gap-3">
+            <p class="text-[#101518] tracking-light text-[32px] font-bold leading-tight">{{ product.name }}</p>
+            
+            <div class="flex items-center gap-2">
+                {% if product.available %}
+                <p class="text-[#5c748a] text-sm font-normal leading-normal">{{ product.category.name }}</p>
+                    <span class="flex h-8 items-center justify-center gap-x-2 rounded-xl bg-green-100 text-green-800 px-4">
+                        <p class="text-sm font-medium leading-normal">Disponível</p>
+                    </span>
+                {% else %}
+                    <span class="flex h-8 items-center justify-center gap-x-2 rounded-xl bg-red-100 text-red-800 px-4">
+                        <p class="text-sm font-medium leading-normal">Em falta</p>
+                    </span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-8 p-4">
+        <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-xl" style="background-image: url('{{ product.image.url }}'); background-size: contain;"></div>
+        <div class="flex flex-col gap-6">
+            {% if product.external_url %}
+            <a href="{{ product.external_url }}" target="_blank" rel="noopener noreferrer" class="flex h-12 w-full items-center justify-center rounded-xl bg-[#101518] text-white text-base font-bold leading-normal">
+                Comprar Agora
+            </a>
+            {% endif %}
+            <div>
+                <p class="text-[#101518] text-2xl font-bold leading-tight">R$ {{ product.price }}</p>
+            </div>            
+
+            <div>
+                <p class="text-[#5c748a] text-sm font-normal leading-normal mt-2">{{ product.description|linebreaks }}</p>
+            </div>  
+
+        </div>
+    </div>
+{% endblock %} 

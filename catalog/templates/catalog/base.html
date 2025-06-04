@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Tech Emporium{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        body {
+            font-family: Inter, "Noto Sans", sans-serif;
+        }
+        .product-image {
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .category-list {
+            list-style: none;
+            padding: 0;
+        }
+        .category-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="flex items-center justify-center whitespace-nowrap border-b border-solid border-b-[#eaedf1] px-10 py-3">
+                <a href="{% url 'catalog:product_list' %}" class="flex flex-col items-center gap-2 text-[#101518] no-underline">
+                    <div class="size-32">
+                        <img src="/media/logo2.png" alt="Logo Busque Mais Barato" class="w-full h-full object-contain">
+                    </div>
+                </a>
+            </header>
+
+            <div class="px-8 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-7xl w-full flex-1">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+
+            <footer class="flex justify-center">
+                <div class="flex max-w-[960px] flex-1 flex-col">
+                    <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+                        <p class="text-[#5c748a] text-base font-normal leading-normal">@2025 BusqueMaisBarato. Todos os direitos reservados.</p>
+                    </footer>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html> 
