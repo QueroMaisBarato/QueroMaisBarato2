@@ -17,7 +17,7 @@ class Category(models.Model):
         return self.name
     
     def get_absolute_url(self):
-        return reverse('catalog:product_list_by_category', args=[self.slug])
+        return reverse('catalog:home_by_category', args=[self.slug])
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -52,3 +52,20 @@ class Product(models.Model):
         if not self.slug:
             self.slug = slugify(self.name)
         super().save(*args, **kwargs)
+
+class Promotion(models.Model):
+    title = models.CharField(max_length=200)
+    description = models.TextField(blank=True)
+    image = models.ImageField(upload_to='promotions/%Y/%m/%d', blank=True, null=True)
+    product = models.ForeignKey(Product, on_delete=models.SET_NULL, blank=True, null=True, related_name='promotions')
+    active = models.BooleanField(default=True)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ('-created',)
+        verbose_name = 'Promoção'
+        verbose_name_plural = 'Promoções'
+
+    def __str__(self):
+        return self.title

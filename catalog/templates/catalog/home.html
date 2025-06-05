@@ -1,15 +1,32 @@
 {% extends "catalog/base.html" %}
 {% load static %}
 
-{% block title %}
-{% if category %}{{ category.name }}{% else %}Nossos Produtos{% endif %}
-{% endblock %}
+{% block title %}Início{% endblock %}
 
 {% block content %}
-<!-- Container Principal -->
 <div class="flex flex-col gap-8">
-    <!-- Lista de Produtos -->
-    <div id="produtos">
+    <!-- Banner Principal -->
+    <div class="w-full rounded-xl h-[300px] relative overflow-visible mb-8 flex items-center" style="background: linear-gradient(90deg, #e53935 0%, #ffb300 30%, #8e24aa 65%, #1e88e5 100%);">
+        <div class="flex-1 flex justify-center items-center h-full">
+            <img src="/media/ecommerce.png" alt="E-commerce" class="h-[500px] w-auto object-contain">
+        </div>
+        <div class="flex-1 flex flex-col justify-center items-start h-full px-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#fff] leading-tight drop-shadow-md">Encontre os melhores<br>preços</h1>
+        </div>
+    </div>
+
+    <!-- Logos dos Parceiros -->
+    <div class="w-full flex flex-col gap-4">
+        <div class="w-full flex justify-center mb-2">
+            <span class="text-sm text-[#5c748a] font-medium">Nossos Parceiros</span>
+        </div>
+        <div class="w-full px-4">
+            <img src="/media/logos.png" alt="Logos dos Parceiros" class="w-full h-auto object-contain">
+        </div>
+    </div>
+
+    <!-- Busca e Categorias -->
+    <div id="produtos" class="w-full scroll-mt-24">
         <form method="get" class="px-4 py-3">
             <label class="flex flex-col min-w-40 h-12 w-full">
                 <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
@@ -24,16 +41,17 @@
         </form>
 
         <div class="flex gap-3 p-3 pr-4 overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-thin scrollbar-thumb-[#eaedf1] scrollbar-track-transparent">
-            <a href="{% url 'catalog:product_list' %}" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if not category %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
+            <a href="{% url 'catalog:home' %}#produtos" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if not category %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
                 <p class="text-sm font-medium leading-normal">Todos os Produtos</p>
             </a>
             {% for c in categories %}
-            <a href="{{ c.get_absolute_url }}" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if category.slug == c.slug %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
+            <a href="{{ c.get_absolute_url }}#produtos" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if category.slug == c.slug %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
                 <p class="text-sm font-medium leading-normal">{{ c.name }}</p>
             </a>
             {% endfor %}
         </div>
 
+        <!-- Grid de Produtos -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
             {% for product in products %}
                 {% include "catalog/product/_card.html" %}
@@ -48,7 +66,7 @@
         <div class="flex justify-center mt-6">
             <nav class="inline-flex rounded-md shadow-sm" aria-label="Paginação">
                 {% if products.has_previous %}
-                    <a href="?q={{ query }}&page={{ products.previous_page_number }}" class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Anterior</a>
+                    <a href="?q={{ query }}&page={{ products.previous_page_number }}#produtos" class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Anterior</a>
                 {% else %}
                     <span class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-200 bg-gray-100 text-sm font-medium text-gray-400 cursor-not-allowed">Anterior</span>
                 {% endif %}
@@ -56,11 +74,11 @@
                     {% if products.number == num %}
                         <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-[#101518] text-white text-sm font-bold">{{ num }}</span>
                     {% else %}
-                        <a href="?q={{ query }}&page={{ num }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">{{ num }}</a>
+                        <a href="?q={{ query }}&page={{ num }}#produtos" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">{{ num }}</a>
                     {% endif %}
                 {% endfor %}
                 {% if products.has_next %}
-                    <a href="?q={{ query }}&page={{ products.next_page_number }}" class="relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Próxima</a>
+                    <a href="?q={{ query }}&page={{ products.next_page_number }}#produtos" class="relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Próxima</a>
                 {% else %}
                     <span class="relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-200 bg-gray-100 text-sm font-medium text-gray-400 cursor-not-allowed">Próxima</span>
                 {% endif %}
