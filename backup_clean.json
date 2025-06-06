@@ -1,0 +1,4529 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-06-03T19:18:53.781Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Eletrnicos",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-06-03T19:23:01.033Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Notebook",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-06-03T19:49:30.638Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Livro Digital",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-06-03T19:50:14.223Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Livro de ficar rico",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-06-03T19:51:12.328Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Livro de ficar rico",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-06-03T20:00:03.422Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Livro de ficar rico",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"External url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-06-03T20:00:06.134Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Livro de ficar rico",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-06-03T20:00:08.872Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Notebook",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"External url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-06-03T20:26:11.951Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Notebook",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-06-03T21:03:51.223Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Notebook 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-06-03T21:05:12.223Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Notebook 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-06-03T21:05:24.802Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "asasa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-06-03T21:05:40.266Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "asasasasasasasa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-06-03T21:06:34.109Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "asasasasasasasa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-06-03T21:06:48.817Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "ghghghghgh",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-06-03T21:07:55.238Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "llllll",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-06-03T21:09:37.722Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "aaaaaaaaaaaaaaaaaaaaa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-06-03T21:10:10.930Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-06-03T21:10:33.165Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "pppppppp",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-06-03T21:14:21.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-06-03T21:14:59.847Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Furadeira",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-06-03T21:15:29.929Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "iiiiiiii",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Furadeira",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Livro de ficar rico",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Notebook",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Notebook 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "aaaaaaaaaaaaaaaaaaaaa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "asasa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "asasasasasasasa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "asasasasasasasa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "ghghghghgh",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "iiiiiiii",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "llllll",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "pppppppp",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-06-03T21:27:30.403Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-06-03T21:27:37.074Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Livro Digital",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-06-03T21:27:52.659Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Encapsulados",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-06-03T21:28:04.141Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Eletrodomsticos",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-06-03T21:29:37.443Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Bebidas",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-06-03T21:29:45.925Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Perfumes",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-06-03T21:29:54.319Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Cursos Digitais",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-06-03T21:31:07.902Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Mtodos Digitais",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-06-03T22:28:35.744Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Esporte",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-06-03T22:30:08.566Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "120",
+    "object_repr": "Chuteira",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-06-03T22:45:21.995Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "121",
+    "object_repr": "Aliexpress",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-06-03T22:48:30.364Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "122",
+    "object_repr": "Smartphone Xiaomi Poco X7 Pro 5G 12gb 512gb Preto",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-06-03T22:51:36.300Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "122",
+    "object_repr": "Smartphone Xiaomi Poco X7 Pro 5G 12gb 512gb Preto",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Available\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-06-03T22:51:44.267Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "122",
+    "object_repr": "Smartphone Xiaomi Poco X7 Pro 5G 12gb 512gb Preto",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Available\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-06-03T22:51:52.426Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "122",
+    "object_repr": "Smartphone Xiaomi Poco X7 Pro 5G 12gb 512gb Preto",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Available\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2025-06-03T22:52:04.915Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "122",
+    "object_repr": "Smartphone Xiaomi Poco X7 Pro 5G 12gb 512gb Preto",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Available\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2025-06-03T22:53:59.377Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "68",
+    "object_repr": "Eletrnicos Produto 9",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"External url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2025-06-03T22:54:29.323Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "68",
+    "object_repr": "Eletrnicos Produto 9",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"External url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "30",
+    "object_repr": "Cursos Digitais Produto 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "39",
+    "object_repr": "Cursos Digitais Produto 10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "40",
+    "object_repr": "Cursos Digitais Produto 11",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "41",
+    "object_repr": "Cursos Digitais Produto 12",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "42",
+    "object_repr": "Cursos Digitais Produto 13",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "43",
+    "object_repr": "Cursos Digitais Produto 14",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "44",
+    "object_repr": "Cursos Digitais Produto 15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "31",
+    "object_repr": "Cursos Digitais Produto 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "32",
+    "object_repr": "Cursos Digitais Produto 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "33",
+    "object_repr": "Cursos Digitais Produto 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "34",
+    "object_repr": "Cursos Digitais Produto 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "35",
+    "object_repr": "Cursos Digitais Produto 6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "36",
+    "object_repr": "Cursos Digitais Produto 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "37",
+    "object_repr": "Cursos Digitais Produto 8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2025-06-03T22:57:24.987Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "38",
+    "object_repr": "Cursos Digitais Produto 9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "90",
+    "object_repr": "Mtodos Digitais Produto 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "99",
+    "object_repr": "Mtodos Digitais Produto 10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "100",
+    "object_repr": "Mtodos Digitais Produto 11",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "101",
+    "object_repr": "Mtodos Digitais Produto 12",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "102",
+    "object_repr": "Mtodos Digitais Produto 13",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "103",
+    "object_repr": "Mtodos Digitais Produto 14",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "104",
+    "object_repr": "Mtodos Digitais Produto 15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "91",
+    "object_repr": "Mtodos Digitais Produto 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "92",
+    "object_repr": "Mtodos Digitais Produto 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "93",
+    "object_repr": "Mtodos Digitais Produto 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "94",
+    "object_repr": "Mtodos Digitais Produto 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "95",
+    "object_repr": "Mtodos Digitais Produto 6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "96",
+    "object_repr": "Mtodos Digitais Produto 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "97",
+    "object_repr": "Mtodos Digitais Produto 8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2025-06-03T22:57:32.452Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "98",
+    "object_repr": "Mtodos Digitais Produto 9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "123",
+    "object_repr": "Mtodo 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "132",
+    "object_repr": "Mtodo 10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "133",
+    "object_repr": "Mtodo 11",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "134",
+    "object_repr": "Mtodo 12",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "135",
+    "object_repr": "Mtodo 13",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "136",
+    "object_repr": "Mtodo 14",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "137",
+    "object_repr": "Mtodo 15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "138",
+    "object_repr": "Mtodo 16",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "139",
+    "object_repr": "Mtodo 17",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "140",
+    "object_repr": "Mtodo 18",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "141",
+    "object_repr": "Mtodo 19",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "124",
+    "object_repr": "Mtodo 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "142",
+    "object_repr": "Mtodo 20",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "143",
+    "object_repr": "Mtodo 21",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "144",
+    "object_repr": "Mtodo 22",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "145",
+    "object_repr": "Mtodo 23",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "146",
+    "object_repr": "Mtodo 24",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "147",
+    "object_repr": "Mtodo 25",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "148",
+    "object_repr": "Mtodo 26",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "149",
+    "object_repr": "Mtodo 27",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "150",
+    "object_repr": "Mtodo 28",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "151",
+    "object_repr": "Mtodo 29",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "125",
+    "object_repr": "Mtodo 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "152",
+    "object_repr": "Mtodo 30",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "153",
+    "object_repr": "Mtodo 31",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "154",
+    "object_repr": "Mtodo 32",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "155",
+    "object_repr": "Mtodo 33",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "126",
+    "object_repr": "Mtodo 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "127",
+    "object_repr": "Mtodo 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "128",
+    "object_repr": "Mtodo 6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "129",
+    "object_repr": "Mtodo 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "130",
+    "object_repr": "Mtodo 8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2025-06-03T23:05:08.998Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "131",
+    "object_repr": "Mtodo 9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2025-06-03T23:05:15.934Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Mtodos",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2025-06-03T23:12:55.180Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "156",
+    "object_repr": "Frmula da Importao",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2025-06-03T23:13:00.147Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Mtodos Digitais",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2025-06-03T23:24:08.669Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "158",
+    "object_repr": "21 formas de fazer 3000 em 30 dias",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2025-06-03T23:25:39.049Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "157",
+    "object_repr": "Frmula da Importao",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "170",
+    "object_repr": "Barriga Chapada Fcil e Rpido",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "169",
+    "object_repr": "Barriga Chapada em casa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "163",
+    "object_repr": "INTESTINO LIVRE E SAUDVEL",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "164",
+    "object_repr": "Manual da Hipertrofia - Ebooks",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "167",
+    "object_repr": "Meditao Cigana (audio terapia lei da atrao)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "166",
+    "object_repr": "Meditao Consciente | Bem-Estar e Viver",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "162",
+    "object_repr": "Mtodo Sprint de Definio Muscular",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "171",
+    "object_repr": "O Poder do Homem Alfa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "159",
+    "object_repr": "Produto",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "160",
+    "object_repr": "Superando a Ansiedade",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "161",
+    "object_repr": "Sndrome Fngica",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "168",
+    "object_repr": "Voc + SECA E DEFINIDA",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2025-06-03T23:27:13.737Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "165",
+    "object_repr": "Yoga para Iniciantes",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2025-06-03T23:28:44.841Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "172",
+    "object_repr": "Vencendo a Depresso",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2025-06-03T23:34:32.482Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "173",
+    "object_repr": "Liberte-se da Sndrome do Pnico",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2025-06-03T23:36:13.611Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "174",
+    "object_repr": "Sndrome Fngica",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2025-06-03T23:37:28.315Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "175",
+    "object_repr": "Monetizando Servios com Canva",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2025-06-03T23:38:59.354Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "176",
+    "object_repr": "Superando a Ansiedade",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2025-06-03T23:41:06.271Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "177",
+    "object_repr": "Treinamento Sua Prpria Lavanderia 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2025-06-03T23:41:33.686Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "177",
+    "object_repr": "Treinamento Sua Prpria Lavanderia 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2025-06-03T23:43:20.041Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "178",
+    "object_repr": "Rei da seduo",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2025-06-03T23:45:03.194Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "179",
+    "object_repr": "Reprograme Sua Mentalidade para Ganhar Dinheiro",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2025-06-03T23:46:14.199Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "180",
+    "object_repr": "Mtodo Sprint de Definio Muscular",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2025-06-03T23:46:47.604Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "180",
+    "object_repr": "Mtodo Sprint de Definio Muscular",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2025-06-03T23:51:10.353Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "181",
+    "object_repr": "INTESTINO LIVRE E SAUDVEL",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2025-06-03T23:52:03.292Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "182",
+    "object_repr": "Manual da Hipertrofia - Ebooks",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2025-06-03T23:53:51.200Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "183",
+    "object_repr": "seca & define",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2025-06-03T23:54:41.408Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "183",
+    "object_repr": "seca & define",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2025-06-03T23:55:35.043Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "184",
+    "object_repr": "Pilates em casa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 151,
+  "fields": {
+    "action_time": "2025-06-03T23:58:03.797Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "185",
+    "object_repr": "A \"Netflix\" da Musculao",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 152,
+  "fields": {
+    "action_time": "2025-06-03T23:59:02.658Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "185",
+    "object_repr": "A \"Netflix\" da Musculao",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 153,
+  "fields": {
+    "action_time": "2025-06-03T23:59:53.636Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "186",
+    "object_repr": "Yoga para Iniciantes",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 154,
+  "fields": {
+    "action_time": "2025-06-04T00:00:49.980Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "187",
+    "object_repr": "Meditao Consciente | Bem-Estar e Viver",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 155,
+  "fields": {
+    "action_time": "2025-06-04T00:01:19.284Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "187",
+    "object_repr": "Meditao Consciente | Bem-Estar e Viver",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 156,
+  "fields": {
+    "action_time": "2025-06-04T00:02:35.617Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "188",
+    "object_repr": "Sexo Tntrico",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 157,
+  "fields": {
+    "action_time": "2025-06-04T00:03:29.883Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "189",
+    "object_repr": "Meditao Budista",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 158,
+  "fields": {
+    "action_time": "2025-06-04T00:04:38.331Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "190",
+    "object_repr": "Meditao Cigana (audio terapia lei da atrao)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 159,
+  "fields": {
+    "action_time": "2025-06-04T00:06:33.958Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "191",
+    "object_repr": "Voc + SECA E DEFINIDA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 160,
+  "fields": {
+    "action_time": "2025-06-04T00:07:14.482Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "192",
+    "object_repr": "Barriga Chapada em casa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 161,
+  "fields": {
+    "action_time": "2025-06-04T00:09:21.546Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "193",
+    "object_repr": "Nova Renda em 1 Ms: Transforme Seu Potencial em Lucro",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 162,
+  "fields": {
+    "action_time": "2025-06-04T00:10:22.122Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "194",
+    "object_repr": "SOUL FITNESS EM CASA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 163,
+  "fields": {
+    "action_time": "2025-06-04T00:11:15.569Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "195",
+    "object_repr": "Barriga Chapada Fcil e Rpido",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 164,
+  "fields": {
+    "action_time": "2025-06-04T00:12:08.161Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "196",
+    "object_repr": "GUIA DEFINITIVO DE COMO ADESTRAR SEU PET EM CASA - MATERIAL EXCLUSIVO",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 165,
+  "fields": {
+    "action_time": "2025-06-04T00:12:57.912Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "197",
+    "object_repr": "O Poder do Homem Alfa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 166,
+  "fields": {
+    "action_time": "2025-06-04T00:15:29.714Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "191",
+    "object_repr": "Voc + SECA E DEFINIDA",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"External url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 167,
+  "fields": {
+    "action_time": "2025-06-04T00:17:23.801Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "196",
+    "object_repr": "GUIA DEFINITIVO DE COMO ADESTRAR SEU PET EM CASA - MATERIAL EXCLUSIVO",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 168,
+  "fields": {
+    "action_time": "2025-06-04T00:18:03.909Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "175",
+    "object_repr": "Monetizando Servios com Canva",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 169,
+  "fields": {
+    "action_time": "2025-06-04T00:21:01.461Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Importados",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 170,
+  "fields": {
+    "action_time": "2025-06-04T00:28:51.148Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "198",
+    "object_repr": "Curso de funilaria express e pintura de automveis",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 171,
+  "fields": {
+    "action_time": "2025-06-04T00:31:37.842Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "200",
+    "object_repr": "Curso Completo de Esttica automotiva: Do bsico ao avanado",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 172,
+  "fields": {
+    "action_time": "2025-06-04T00:31:37.842Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "205",
+    "object_repr": "Curso de Informtica e celulares completo",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 173,
+  "fields": {
+    "action_time": "2025-06-04T00:31:37.843Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "201",
+    "object_repr": "Curso de Polimento Tcnico e Vitrificao 1.0",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 174,
+  "fields": {
+    "action_time": "2025-06-04T00:31:37.843Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "199",
+    "object_repr": "Curso de funilaria express e pintura de automveis",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 175,
+  "fields": {
+    "action_time": "2025-06-04T00:31:37.843Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "202",
+    "object_repr": "Impressora 3D Fcil",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 176,
+  "fields": {
+    "action_time": "2025-06-04T00:31:37.843Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "204",
+    "object_repr": "Reparo de Celular Por Jefferson Barreto",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 177,
+  "fields": {
+    "action_time": "2025-06-04T00:31:37.843Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "203",
+    "object_repr": "Tcnicas de Vendas",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 178,
+  "fields": {
+    "action_time": "2025-06-04T00:33:58.476Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "206",
+    "object_repr": "Curso de funilaria express e pintura de automveis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 179,
+  "fields": {
+    "action_time": "2025-06-04T00:34:37.713Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "207",
+    "object_repr": "Curso Completo de Esttica automotiva: Do bsico ao avanado",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 180,
+  "fields": {
+    "action_time": "2025-06-04T00:35:00.574Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "208",
+    "object_repr": "Curso de Polimento Tcnico e Vitrificao 1.0",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 181,
+  "fields": {
+    "action_time": "2025-06-04T00:37:40.234Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "209",
+    "object_repr": "Impressora 3D Fcil",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 182,
+  "fields": {
+    "action_time": "2025-06-04T00:38:02.080Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "210",
+    "object_repr": "Tcnicas de Vendas",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 183,
+  "fields": {
+    "action_time": "2025-06-04T00:38:29.549Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "211",
+    "object_repr": "Reparo de Celular Por Jefferson Barreto",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 184,
+  "fields": {
+    "action_time": "2025-06-04T00:39:06.173Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "212",
+    "object_repr": "Curso de Informtica e celulares completo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 185,
+  "fields": {
+    "action_time": "2025-06-04T00:39:58.264Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "213",
+    "object_repr": "Combo Manicure e Pedicure",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 186,
+  "fields": {
+    "action_time": "2025-06-04T00:40:59.027Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "214",
+    "object_repr": "Curso de alongamento de unhas fibra de Vidro 6 em 1 com 5 Bnus",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 187,
+  "fields": {
+    "action_time": "2025-06-04T00:42:40.421Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "215",
+    "object_repr": "UNHAS EM GEL START",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Available\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 188,
+  "fields": {
+    "action_time": "2025-06-04T00:43:18.666Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "216",
+    "object_repr": "Curso Massagem Relaxante Completo",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 189,
+  "fields": {
+    "action_time": "2025-06-04T00:43:34.082Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "231",
+    "object_repr": "Curso Massagem Relaxante Completo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 190,
+  "fields": {
+    "action_time": "2025-06-04T00:44:21.906Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "217",
+    "object_repr": "Curso de Micropigmentao BNUS: Design de Sobrancelha Incluso",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 191,
+  "fields": {
+    "action_time": "2025-06-04T00:45:00.564Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "218",
+    "object_repr": "Curso de Automaquiagem - Larissa Drago",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 192,
+  "fields": {
+    "action_time": "2025-06-04T00:45:33.263Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "219",
+    "object_repr": "Curso extenso de clios fio a fio para iniciantes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 193,
+  "fields": {
+    "action_time": "2025-06-04T00:46:38.113Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "221",
+    "object_repr": "Micropigmentao labial",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Available\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 194,
+  "fields": {
+    "action_time": "2025-06-04T00:47:25.412Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "222",
+    "object_repr": "Curso Completo de Tatuagem Master Class",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 195,
+  "fields": {
+    "action_time": "2025-06-04T00:47:45.217Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "222",
+    "object_repr": "Curso Completo de Tatuagem Master Class",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 196,
+  "fields": {
+    "action_time": "2025-06-04T00:48:31.723Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "223",
+    "object_repr": "CURSO DE BARBEIRO INICIANTES - CORTE E BARBA",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 197,
+  "fields": {
+    "action_time": "2025-06-04T00:49:25.688Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "224",
+    "object_repr": "Apostila Digital Metodologia BDB Para Barbeiros(as)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 198,
+  "fields": {
+    "action_time": "2025-06-04T00:50:00.719Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "225",
+    "object_repr": "CURSO DE BARBEIRO PROFISSIONAL",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 199,
+  "fields": {
+    "action_time": "2025-06-04T00:50:33.034Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "226",
+    "object_repr": "Curso Mestre do Platinado",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 200,
+  "fields": {
+    "action_time": "2025-06-04T00:51:11.134Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "227",
+    "object_repr": "Contour Hair - Curso de Loiros Perfeitos Utilizando Touca com Efeito Papelote",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 201,
+  "fields": {
+    "action_time": "2025-06-04T00:51:47.417Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "228",
+    "object_repr": "Prtese Capilar Masculina - Manuteno",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 202,
+  "fields": {
+    "action_time": "2025-06-04T00:52:25.059Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "229",
+    "object_repr": "Massagem Tntrica Experience - Desperte O Prazer",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 203,
+  "fields": {
+    "action_time": "2025-06-04T00:52:51.611Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "230",
+    "object_repr": "Drenagem Linftica Completa [2025] + Segredo para Fidelizar e Atrair novas clientes.",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 204,
+  "fields": {
+    "action_time": "2025-06-04T00:53:21.648Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "231",
+    "object_repr": "Curso Massagem Relaxante Completo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 205,
+  "fields": {
+    "action_time": "2025-06-04T00:53:59.107Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "232",
+    "object_repr": "Curso de Massagem Relaxante",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 206,
+  "fields": {
+    "action_time": "2025-06-04T00:54:48.021Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "233",
+    "object_repr": "CURSO COMPLETO DE BRONZEAMENTO SEM SOL E COMO LEGALIZAR",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Available\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 207,
+  "fields": {
+    "action_time": "2025-06-04T00:55:22.155Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "234",
+    "object_repr": "Curso Bronzeamento a Jato + Montagem Biquni de Fita",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 208,
+  "fields": {
+    "action_time": "2025-06-04T00:56:05.859Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "235",
+    "object_repr": "Quiropraxia Clinica pra massoterapeutas e massagistas",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Available\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 209,
+  "fields": {
+    "action_time": "2025-06-04T00:56:49.081Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "236",
+    "object_repr": "Quiropraxia Oriental e Tcnicas Teraputicas do Mtodo Equilibrium",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 210,
+  "fields": {
+    "action_time": "2025-06-04T00:57:26.447Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "236",
+    "object_repr": "Quiropraxia Oriental e Tcnicas Teraputicas do Mtodo Equilibrium",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 211,
+  "fields": {
+    "action_time": "2025-06-04T00:59:38.605Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "206",
+    "object_repr": "Curso de funilaria express e pintura de automveis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 212,
+  "fields": {
+    "action_time": "2025-06-04T01:00:37.793Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "208",
+    "object_repr": "Curso de Polimento Tcnico e Vitrificao 1.0",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 213,
+  "fields": {
+    "action_time": "2025-06-04T01:02:07.598Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "211",
+    "object_repr": "Reparo de Celular Por Jefferson Barreto",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 214,
+  "fields": {
+    "action_time": "2025-06-04T01:02:30.462Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "212",
+    "object_repr": "Curso de Informtica e celulares completo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 215,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.382Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Bebidas Produto 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 216,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "24",
+    "object_repr": "Bebidas Produto 10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 217,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "Bebidas Produto 11",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 218,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "Bebidas Produto 12",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 219,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "27",
+    "object_repr": "Bebidas Produto 13",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 220,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "28",
+    "object_repr": "Bebidas Produto 14",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 221,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "29",
+    "object_repr": "Bebidas Produto 15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 222,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Bebidas Produto 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 223,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "Bebidas Produto 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 224,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "Bebidas Produto 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 225,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "Bebidas Produto 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 226,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "20",
+    "object_repr": "Bebidas Produto 6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 227,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "21",
+    "object_repr": "Bebidas Produto 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 228,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "22",
+    "object_repr": "Bebidas Produto 8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 229,
+  "fields": {
+    "action_time": "2025-06-04T01:22:02.383Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Bebidas Produto 9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 230,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "45",
+    "object_repr": "Eletrodomsticos Produto 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 231,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "54",
+    "object_repr": "Eletrodomsticos Produto 10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 232,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "55",
+    "object_repr": "Eletrodomsticos Produto 11",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 233,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "56",
+    "object_repr": "Eletrodomsticos Produto 12",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 234,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "57",
+    "object_repr": "Eletrodomsticos Produto 13",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 235,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "58",
+    "object_repr": "Eletrodomsticos Produto 14",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 236,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "59",
+    "object_repr": "Eletrodomsticos Produto 15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 237,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "46",
+    "object_repr": "Eletrodomsticos Produto 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 238,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "47",
+    "object_repr": "Eletrodomsticos Produto 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 239,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "48",
+    "object_repr": "Eletrodomsticos Produto 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 240,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "49",
+    "object_repr": "Eletrodomsticos Produto 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 241,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "50",
+    "object_repr": "Eletrodomsticos Produto 6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 242,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "51",
+    "object_repr": "Eletrodomsticos Produto 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 243,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "52",
+    "object_repr": "Eletrodomsticos Produto 8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 244,
+  "fields": {
+    "action_time": "2025-06-04T01:22:11.790Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "53",
+    "object_repr": "Eletrodomsticos Produto 9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 245,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "105",
+    "object_repr": "Perfumes Produto 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 246,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "114",
+    "object_repr": "Perfumes Produto 10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 247,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "115",
+    "object_repr": "Perfumes Produto 11",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 248,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "116",
+    "object_repr": "Perfumes Produto 12",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 249,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "117",
+    "object_repr": "Perfumes Produto 13",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 250,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "118",
+    "object_repr": "Perfumes Produto 14",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 251,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "119",
+    "object_repr": "Perfumes Produto 15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 252,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "106",
+    "object_repr": "Perfumes Produto 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 253,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "107",
+    "object_repr": "Perfumes Produto 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 254,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "108",
+    "object_repr": "Perfumes Produto 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 255,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "109",
+    "object_repr": "Perfumes Produto 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 256,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "110",
+    "object_repr": "Perfumes Produto 6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 257,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "111",
+    "object_repr": "Perfumes Produto 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 258,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "112",
+    "object_repr": "Perfumes Produto 8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 259,
+  "fields": {
+    "action_time": "2025-06-04T01:22:20.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "113",
+    "object_repr": "Perfumes Produto 9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 260,
+  "fields": {
+    "action_time": "2025-06-04T01:22:26.564Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "120",
+    "object_repr": "Chuteira",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 261,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "75",
+    "object_repr": "Encapsulados Produto 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 262,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "84",
+    "object_repr": "Encapsulados Produto 10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 263,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "85",
+    "object_repr": "Encapsulados Produto 11",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 264,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "86",
+    "object_repr": "Encapsulados Produto 12",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 265,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "87",
+    "object_repr": "Encapsulados Produto 13",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 266,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "88",
+    "object_repr": "Encapsulados Produto 14",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 267,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "89",
+    "object_repr": "Encapsulados Produto 15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 268,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "76",
+    "object_repr": "Encapsulados Produto 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 269,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "77",
+    "object_repr": "Encapsulados Produto 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 270,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "78",
+    "object_repr": "Encapsulados Produto 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 271,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "79",
+    "object_repr": "Encapsulados Produto 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 272,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "80",
+    "object_repr": "Encapsulados Produto 6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 273,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "81",
+    "object_repr": "Encapsulados Produto 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 274,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "82",
+    "object_repr": "Encapsulados Produto 8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 275,
+  "fields": {
+    "action_time": "2025-06-04T01:22:35.858Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "83",
+    "object_repr": "Encapsulados Produto 9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 276,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "60",
+    "object_repr": "Eletrnicos Produto 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 277,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "69",
+    "object_repr": "Eletrnicos Produto 10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 278,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "70",
+    "object_repr": "Eletrnicos Produto 11",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 279,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "71",
+    "object_repr": "Eletrnicos Produto 12",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 280,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "72",
+    "object_repr": "Eletrnicos Produto 13",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 281,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "73",
+    "object_repr": "Eletrnicos Produto 14",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 282,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "74",
+    "object_repr": "Eletrnicos Produto 15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 283,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "61",
+    "object_repr": "Eletrnicos Produto 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 284,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "62",
+    "object_repr": "Eletrnicos Produto 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 285,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "63",
+    "object_repr": "Eletrnicos Produto 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 286,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "64",
+    "object_repr": "Eletrnicos Produto 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 287,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "65",
+    "object_repr": "Eletrnicos Produto 6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 288,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "66",
+    "object_repr": "Eletrnicos Produto 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 289,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "67",
+    "object_repr": "Eletrnicos Produto 8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 290,
+  "fields": {
+    "action_time": "2025-06-04T01:22:42.208Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "68",
+    "object_repr": "Eletrnicos Produto 9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 291,
+  "fields": {
+    "action_time": "2025-06-04T01:23:02.550Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Esporte",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 292,
+  "fields": {
+    "action_time": "2025-06-05T22:03:32.149Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "TESTE orinio",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 293,
+  "fields": {
+    "action_time": "2025-06-05T23:04:35.428Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "226",
+    "object_repr": "Curso Mestre do Platinado",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 7,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 7,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 7,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 7,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add product",
+    "content_type": 8,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change product",
+    "content_type": 8,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete product",
+    "content_type": 8,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view product",
+    "content_type": 8,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Promoo",
+    "content_type": 9,
+    "codename": "add_promotion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Promoo",
+    "content_type": 9,
+    "codename": "change_promotion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Promoo",
+    "content_type": 9,
+    "codename": "delete_promotion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Promoo",
+    "content_type": 9,
+    "codename": "view_promotion"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$QOoA3PuRe3oWLrkBfMhCPx$J/jLwhT3bT/rvluKyrjVlEhBVMHUKoQ6n4arvYQMA4M=",
+    "last_login": "2025-06-03T21:03:26.067Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "jr.marques4@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-06-03T19:18:20.530Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "catalog",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "catalog",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "catalog",
+    "model": "promotion"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mywheyzyjeq662eo55zbpef902ir8ahz",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-xVYo6TmDtevdxQFkS_lUiLtDpBTQvpl5L5VhW2veFp7zROqsrDr9bgjlwW0HdId267r0ts4T6l3RB130tRM_L4f7d1Bhqd_amDCwJJIR0YhDn0bjBBMjl5QshcFjRHCAJDYFBEsSzSjRFc_svXp_AAR7OOI:1uMYn8:indXUW3KaB2yc-hsp9_LWhe4RGWiRDZguNK0zlfyCzw",
+    "expire_date": "2025-06-17T21:03:26.072Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vloxr9tk8seoyh7y8v29s4r4kzhidlqx",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-xVYo6TmDtevdxQFkS_lUiLtDpBTQvpl5L5VhW2veFp7zROqsrDr9bgjlwW0HdId267r0ts4T6l3RB130tRM_L4f7d1Bhqd_amDCwJJIR0YhDn0bjBBMjl5QshcFjRHCAJDYFBEsSzSjRFc_svXp_AAR7OOI:1uMXnY:oxE-SVrCp6GAOLOOyYYs5tliGonRYn97pBTu3zmvU2g",
+    "expire_date": "2025-06-17T19:59:48.259Z"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 1,
+  "fields": {
+    "name": "Eletrnicos",
+    "slug": "eletronicos"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 3,
+  "fields": {
+    "name": "Encapsulados",
+    "slug": "encapsulados"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 4,
+  "fields": {
+    "name": "Eletrodomsticos",
+    "slug": "eletrodomesticos"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 5,
+  "fields": {
+    "name": "Bebidas",
+    "slug": "bebidas"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 6,
+  "fields": {
+    "name": "Perfumes",
+    "slug": "perfumes"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 7,
+  "fields": {
+    "name": "Cursos Digitais",
+    "slug": "cursos-digitais"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 8,
+  "fields": {
+    "name": "Mtodos Digitais",
+    "slug": "metodos-digitais"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 157,
+  "fields": {
+    "category": 8,
+    "name": "Frmula da Importao",
+    "slug": "formula-da-importacao",
+    "image": "products/2025/06/03/newphoto_3.png",
+    "description": "Descubra como lucrar at 10k em uma nica venda de produtos importados dos EUA ou Paraguai.\r\n\r\nVoc vai dominar a compra mais barata de qualquer produto, e a poder usar para lucrar ou economizar.\r\n\r\nEssa habilidade vai garantir economia ou lucro para voc e sua famlia para sempre.\r\n\r\nVoc pode importar:\r\n\r\n* Eletrnicos e smartphones\r\n\r\n** Roupas e acessrios\r\n\r\n** Relgios e perfumes\r\n\r\n** Brinquedos e utenslios\r\n\r\n** Diversos outros produtos diferentes.\r\n\r\nInclusive, tem fornecedores que fazem drop, onde voc vende sem precisar comprar estoque.\r\n\r\nTudo isso, de forma 100% legal e com lucratividade muito acima da mdia.\r\n\r\nInscreva-se em nosso mtodo \"Frmula da Importao\" e domine essa habilidade incrvel.\r\n\r\nO acesso  enviado imediatamente no seu e-mail.",
+    "price": "197.00",
+    "available": true,
+    "external_url": "https://chk.eduzz.com/8WPD8Q1NWP",
+    "created": "2025-06-03T23:21:12.739Z",
+    "updated": "2025-06-03T23:25:39.041Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 158,
+  "fields": {
+    "category": 8,
+    "name": "21 formas de fazer 3000 em 30 dias",
+    "slug": "21-formas-de-fazer-3000-em-30-dias",
+    "image": "products/2025/06/03/newphoto_2.png",
+    "description": "Uma soluo documentada em mais de 90 pginas que possui a finalidade de te direcionar a encontrar o que pode ser uma alternativa de fonte de renda para voc.",
+    "price": "21.00",
+    "available": true,
+    "external_url": "https://chk.eduzz.com/1595260?a=71055458",
+    "created": "2025-06-03T23:22:20.757Z",
+    "updated": "2025-06-03T23:24:08.668Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 172,
+  "fields": {
+    "category": 8,
+    "name": "Vencendo a Depresso",
+    "slug": "vencendo-a-depressao",
+    "image": "products/2025/06/03/PLR-em-Video-Depressao.webp",
+    "description": "Este programa de Combate  Depresso  uma srie de vdeos que foi cuidadosamente desenvolvida para te auxiliar a entender, reconhecer e encontrar um tratamento adequado para a depresso. Consumindo este contedo, voc ganhar clareza sobre o tema e aprender como assumir o controle total de seus pensamentos, sentimentos e emoes para combater a depresso de maneira eficaz para que ela no volte nunca mais.\r\n\r\nSrie de vdeos dividida em 6 Mdulos com o total de 18 vdeos explicativos",
+    "price": "97.00",
+    "available": true,
+    "external_url": "https://combateadepressao.com.br/?mcr=AJW25354493",
+    "created": "2025-06-03T23:28:44.840Z",
+    "updated": "2025-06-03T23:28:44.840Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 173,
+  "fields": {
+    "category": 8,
+    "name": "Liberte-se da Sndrome do Pnico",
+    "slug": "liberte-se-da-sindrome-do-panico",
+    "image": "products/2025/06/03/1.png",
+    "description": "Ele vai te mostrar como Eu fiz para me livrar de todos esses sintomas citados acima e vrios outros causados pela Sndrome do Pnico, te dando confiana para viver uma vida mais saudvel.",
+    "price": "67.00",
+    "available": true,
+    "external_url": "https://supereiasindrome.com.br/?mcr=AHD25354505",
+    "created": "2025-06-03T23:34:32.479Z",
+    "updated": "2025-06-03T23:34:32.479Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 174,
+  "fields": {
+    "category": 8,
+    "name": "Sndrome Fngica",
+    "slug": "sindrome-fungica",
+    "image": "products/2025/06/03/newphoto_4.png",
+    "description": "Voc sofre com dores nas articulaes, dores no corpo, fadiga intensa, cansao mental, queda de cabelo, unhas fracas, gazes e dores intestinais ?\r\nEsses sintomas e muitos outros relacionados a esses podem ser sinais de um problema oculto, que est afetando a sua saude\r\nDescubra tudo no nosso e-book Sindrome fungica Guia completo de tratamento natural.\r\n?? *O Que Voc Vai Aprender:*\r\n- Como a sndrome fngica pode estar afetando seu corpo.\r\n- Tratamentos naturais para aliviar sintomas e restaurar sua sade.\r\n- Alimentos e suplementos que realmente funcionam.\r\n\r\n*No Perca Tempo!* Saiba como vencer esses problemas de uma vez por todas.",
+    "price": "19.90",
+    "available": true,
+    "external_url": "https://chk.eduzz.com/2436395?a=71055458",
+    "created": "2025-06-03T23:36:13.510Z",
+    "updated": "2025-06-03T23:36:13.510Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 175,
+  "fields": {
+    "category": 8,
+    "name": "Monetizando Servios com Canva",
+    "slug": "monetizando-servicos-com-canva",
+    "image": "products/2025/06/03/2aadffab-9214-4d0c-b866-a17da5f4584a.webp",
+    "description": "Aprenda a usar o poder do Canva para criar servios visuais de alta demanda, desde designs para redes sociais at materiais grficos personalizados. Neste curto, voc vai descobrir como monetizar suas habilidades de design, oferecendo servios a empresas, influencers e empreendedores que precisam de contedo profissional, mas acessvel. Com as ferramentas certas e uma boa estratgia, voc pode transformar sua criatividade em uma fonte constante de lucro.",
+    "price": "127.00",
+    "available": true,
+    "external_url": "https://pay.cakto.com.br/7oMEpT2?affiliate=BG5hEt5H",
+    "created": "2025-06-03T23:37:28.314Z",
+    "updated": "2025-06-04T00:18:03.908Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 176,
+  "fields": {
+    "category": 8,
+    "name": "Superando a Ansiedade",
+    "slug": "superando-a-ansiedade",
+    "image": "products/2025/06/03/newphoto_5.png",
+    "description": "Voc est constantemente com medo, preocupado ou talvez nervoso? Voc tem problemas para dormir ou sempre se sente cansado e em pnico?\r\n\r\nVoc sempre se pergunta por que no consegue parar de se preocupar e por que ainda est com medo?\r\n\r\nVoc gostaria de poder superar esses problemas para comear a viver a vida que deseja? Esses tipos de sentimentos e emoes so frequentemente diagnosticados como ansiedade.",
+    "price": "67.00",
+    "available": true,
+    "external_url": "https://chk.eduzz.com/2034343?a=71055458",
+    "created": "2025-06-03T23:38:59.353Z",
+    "updated": "2025-06-03T23:38:59.353Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 177,
+  "fields": {
+    "category": 8,
+    "name": "Treinamento Sua Prpria Lavanderia 2",
+    "slug": "treinamento-sua-propria-lavanderia-2",
+    "image": "products/2025/06/03/cdb2a269-a730-4cd4-9a5a-f28af67d9c5f.webp",
+    "description": "Aprenda a construir uma Lavanderia Independente do absoluto zero com algum que vive desse mercado a anos!",
+    "price": "197.00",
+    "available": true,
+    "external_url": "https://pay.cakto.com.br/86fv55m?affiliate=8CDiZLfG",
+    "created": "2025-06-03T23:41:06.172Z",
+    "updated": "2025-06-03T23:41:33.685Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 178,
+  "fields": {
+    "category": 8,
+    "name": "Rei da seduo",
+    "slug": "rei-da-seducao",
+    "image": "products/2025/06/03/img_builder_381c8ce6-c036-4f70-9618-6b5136b9621f_f55440cbe0a04ee1956_8poSsnU.jpg",
+    "description": "Rei da Seduo: o homem que domina a arte de conquistar com charme, confiana e estilo. Cada gesto, cada palavra,  uma dana irresistvel que atrai todos os olhares. Elegncia, presena e carisma so seus superpoderes. O verdadeiro mestre da seduo, onde cada detalhe  pensado para deixar uma marca inesquecvel.",
+    "price": "97.00",
+    "available": true,
+    "external_url": "https://pay.kiwify.com.br/4Gi0L7Z?afid=ceAdatx4",
+    "created": "2025-06-03T23:43:20.040Z",
+    "updated": "2025-06-03T23:43:20.040Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 179,
+  "fields": {
+    "category": 8,
+    "name": "Reprograme Sua Mentalidade para Ganhar Dinheiro",
+    "slug": "reprograme-sua-mentalidade-para-ganhar-dinheiro",
+    "image": "products/2025/06/03/img_builder_d661f7fa-2ef2-435d-8982-a7f01ae1c018_b0d4021e856840c3ab8_kNF485u.jpg",
+    "description": "Abra sua mente para a abundncia e desbloqueie o seu potencial financeiro. Neste curto, voc vai descobrir como transformar crenas limitantes em pensamentos de prosperidade, adotando hbitos e atitudes que atraem oportunidades e riqueza. O sucesso comea na mente  mude seus pensamentos, mude sua vida.",
+    "price": "198.00",
+    "available": true,
+    "external_url": "https://pay.kiwify.com.br/7G9NuNX?afid=qxKQ8Ts1",
+    "created": "2025-06-03T23:45:03.193Z",
+    "updated": "2025-06-03T23:45:03.193Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 180,
+  "fields": {
+    "category": 8,
+    "name": "Mtodo Sprint de Definio Muscular",
+    "slug": "metodo-sprint-de-definicao-muscular",
+    "image": "products/2025/06/03/newphoto_6.png",
+    "description": "A sua Jornada de Transformao Corporal comea aqui!\r\n\r\nPor mais de uma dcada, mergulhei fundo no universo fitness, atravs da faculdade de Educao Fsica, leituras, cursos extras, e sempre observando, vivendo e estudando os segredos para o sucesso da transformao corporal.\r\n\r\nAgora,  com grande empolgao que venho compartilhar com vocs meu segundo livro de transformao corporal. Repleto de informaes valiosas, procurei deixar este material o mais completo possvel e com uma linguagem de fcil entendimento!\r\n\r\nVoc j se sentiu frustrado com dietas restritivas que prometem resultados milagrosos, mas que, no final, acabam sabotando seus esforos?\r\n\r\nOu talvez j se perguntou por que seus treinos parecem no trazer os resultados que voc tanto deseja? Acredite, voc no est sozinho!\r\n\r\nNeste livro, revelo por que a maioria das pessoas enfrenta desafios para emagrecer e definir o corpo. Mais importante, ofereo solues eficazes baseadas em cincia, reflexes pessoais e orientaes valiosas.\r\n\r\nO que voc encontrar no Mtodo Sprint de Definio Muscular?\r\n\r\nAntes de descrever o que voc encontrar neste livro, deixo claro que: voc pode transformar seu corpo com academia ou sem academia. Ento no se preocupe se voc no faz musculao. Aprender o que funciona para mudar seu shape mesmo que treine em casa ou no parque.\r\n\r\nMtodo Sprint de Definio Muscular!\r\n\r\nTransforme sua Relao com a Alimentao: Adeus s dietas frustrantes e restritivas! Compartilho um mtodo simples e eficaz para construir uma relao saudvel com a comida e ainda alcanar seus objetivos de forma sustentvel.\r\n\r\nTreino Inteligente para Resultados Reais: Desvende os segredos dos treinos mais eficazes e saiba como adapt-los ao seu corpo e metas especficas. Segredos do treino de musculao que a maioria dos profissionais desconhecem ou so preguiosos para te ensinar e como melhorar seu shape em casa ou com treinos no parque.\r\n\r\nA Jornada para o Corpo dos Sonhos: Com base em conhecimentos cientficos comprovados, te mostro o caminho para alcanar o shape que sempre desejou, de maneira realista e saudvel.\r\n\r\nFelicidade e Equilbrio: Saiba como os aspectos emocionais influenciam seus resultados e aprenda como ajustar seus hbitos e emoes para potencializar seus ganhos.\r\n\r\nBnus Especial:\r\n\r\nComo Eliminei 15 kg em menos de 4 meses antes de entrar na faculdade em 2013.\r\n\r\nComo Eliminei 10 kg na quarentena de 2020 sem academia!\r\n\r\nSo mais de 200 pginas repletas de informaes, e no final, tambm deixo alguns exemplos de fichas de treino que j utilizei ao longo dos meus 18 anos de treinos. Treinos de fora, hipertrofia, calistenia, como potencializar o ganho de massa magra e eliminar gordura e muito mais!\r\n\r\nTenho certeza que este livro se transformar em um manual de treino, mentalidade e dieta para voc. Podendo mudar completamente sua forma de enxergar o mundo e o universo fitness!\r\n\r\nE o melhor de tudo, voc pode revisar o contedo sempre que quiser!\r\n\r\nBora! Bora mudar esse shape.",
+    "price": "49.90",
+    "available": true,
+    "external_url": "https://chk.eduzz.com/2075661?a=71055458",
+    "created": "2025-06-03T23:46:14.198Z",
+    "updated": "2025-06-03T23:46:47.603Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 181,
+  "fields": {
+    "category": 8,
+    "name": "INTESTINO LIVRE E SAUDVEL",
+    "slug": "intestino-livre-e-saudavel",
+    "image": "products/2025/06/03/newphoto_7.png",
+    "description": "Se voc vive em guerra com seu intestino tudo ir mudar a partir de agora.\r\nO programa INTESTINO LIVRE E SAUDVEL  para voc que no aguenta mais essa guerra diria.\r\n\r\nEle Foi criado para pessoa que sofrem com o intestino preso, abdmen distendido,\r\nGases intestinais, hemorroida inflamada fissura anal, enxaqueca e outros sintomas relacionados a intestino preso!\r\n\r\nEu vou te ensinar receitas super prticas, fceis e muito poderosas, feitas a base de Aveia, Uvas Passas, Amndoas e especiarias. Voc vai contar com o poder das ervas medicinais, passo a passo com ingredientes fceis de encontrar.",
+    "price": "97.00",
+    "available": true,
+    "external_url": "https://chk.eduzz.com/2300054?a=71055458",
+    "created": "2025-06-03T23:51:10.351Z",
+    "updated": "2025-06-03T23:51:10.351Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 182,
+  "fields": {
+    "category": 8,
+    "name": "Manual da Hipertrofia - Ebooks",
+    "slug": "manual-da-hipertrofia-ebooks",
+    "image": "products/2025/06/03/newphoto_8.png",
+    "description": "O \"Manual da Hipertrofia\"  um guia completo e abrangente para quem deseja alcanar resultados expressivos no ganho de massa muscular. Desenvolvido por um especialista em fitness e musculao, este manual oferece um programa de treinamento avanado, tcnicas de exerccios especficas e informaes nutricionais valiosas para ajud-lo a atingir seus objetivos de forma eficaz.\r\n\r\nCom uma abordagem prtica e acessvel, o autor apresenta uma srie de estratgias e mtodos testados e comprovados que iro ajud-lo a maximizar seus ganhos musculares e a alcanar resultados duradouros. Se voc est buscando informaes precisas e confiveis sobre hipertrofia, este manual  a escolha certa para voc.\r\n\r\nAlm disso, o \"Manual da Hipertrofia\" no  apenas um guia de treinamento e nutrio. Ele tambm inclui uma seo sobre a psicologia por trs do sucesso no fitness, com conselhos prticos para manter a motivao, superar os obstculos e alcanar seus objetivos de forma consistente.\r\n\r\nSe voc est pronto para levar sua jornada de fitness para o prximo nvel, o \"Manual da Hipertrofia \"  o guia completo que voc precisa.",
+    "price": "97.00",
+    "available": true,
+    "external_url": "https://chk.eduzz.com/2301297?a=71055458",
+    "created": "2025-06-03T23:52:03.291Z",
+    "updated": "2025-06-03T23:52:03.291Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 183,
+  "fields": {
+    "category": 8,
+    "name": "seca & define",
+    "slug": "seca-define",
+    "image": "products/2025/06/03/Captura_de_tela_2025-06-03_205414.png",
+    "description": "Esse desafio  para voc, mulher que, entre a correria do dia a dia, ainda encontra tempo para cuidar de si mesma. \r\n\r\nSe voc j cansou de tentar dietas malucas que s trazem frustrao e que resultados reais e duradouros, o Desafio SECA & DEFINE  o que voc precisa! \r\n\r\nImagine queimar gordura, ganhar massa muscular, e transformar seu corpo sem abrir a mo dos prazeres da vida. \r\n\r\nCom acompanhamento profissional e uma comunidade que voc entende, voc ver as mudanas em poucos dias , sentindo-se mais confiante a cada passo.",
+    "price": "97.00",
+    "available": true,
+    "external_url": "https://comunidademyshape.com/desafio-seca-e-define/",
+    "created": "2025-06-03T23:53:51.198Z",
+    "updated": "2025-06-03T23:54:41.406Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 184,
+  "fields": {
+    "category": 8,
+    "name": "Pilates em casa",
+    "slug": "pilates-em-casa",
+    "image": "products/2025/06/03/img_builder_920f9d3a-2e84-4c06-8b9b-5d259c8423e1_9a715e946f5740f3866_pffRLHu.jpg",
+    "description": 
