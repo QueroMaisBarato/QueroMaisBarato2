@@ -7,7 +7,7 @@
     "user": 1,
     "content_type": 7,
     "object_id": "1",
-    "object_repr": "Eletrnicos",
+    "object_repr": "Eletrônicos",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -254,7 +254,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "12",
-    "object_repr": "",
+    "object_repr": "ççççççççççççç",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -462,7 +462,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "12",
-    "object_repr": "",
+    "object_repr": "ççççççççççççç",
     "action_flag": 3,
     "change_message": ""
   }
@@ -501,7 +501,7 @@
     "user": 1,
     "content_type": 7,
     "object_id": "4",
-    "object_repr": "Eletrodomsticos",
+    "object_repr": "Eletrodomésticos",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -553,7 +553,7 @@
     "user": 1,
     "content_type": 7,
     "object_id": "8",
-    "object_repr": "Mtodos Digitais",
+    "object_repr": "Métodos Digitais",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -670,7 +670,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "68",
-    "object_repr": "Eletrnicos Produto 9",
+    "object_repr": "Eletrônicos Produto 9",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"External url\"]}}]"
   }
@@ -683,7 +683,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "68",
-    "object_repr": "Eletrnicos Produto 9",
+    "object_repr": "Eletrônicos Produto 9",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"External url\"]}}]"
   }
@@ -891,7 +891,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "90",
-    "object_repr": "Mtodos Digitais Produto 1",
+    "object_repr": "Métodos Digitais Produto 1",
     "action_flag": 3,
     "change_message": ""
   }
@@ -904,7 +904,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "99",
-    "object_repr": "Mtodos Digitais Produto 10",
+    "object_repr": "Métodos Digitais Produto 10",
     "action_flag": 3,
     "change_message": ""
   }
@@ -917,7 +917,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "100",
-    "object_repr": "Mtodos Digitais Produto 11",
+    "object_repr": "Métodos Digitais Produto 11",
     "action_flag": 3,
     "change_message": ""
   }
@@ -930,7 +930,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "101",
-    "object_repr": "Mtodos Digitais Produto 12",
+    "object_repr": "Métodos Digitais Produto 12",
     "action_flag": 3,
     "change_message": ""
   }
@@ -943,7 +943,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "102",
-    "object_repr": "Mtodos Digitais Produto 13",
+    "object_repr": "Métodos Digitais Produto 13",
     "action_flag": 3,
     "change_message": ""
   }
@@ -956,7 +956,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "103",
-    "object_repr": "Mtodos Digitais Produto 14",
+    "object_repr": "Métodos Digitais Produto 14",
     "action_flag": 3,
     "change_message": ""
   }
@@ -969,7 +969,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "104",
-    "object_repr": "Mtodos Digitais Produto 15",
+    "object_repr": "Métodos Digitais Produto 15",
     "action_flag": 3,
     "change_message": ""
   }
@@ -982,7 +982,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "91",
-    "object_repr": "Mtodos Digitais Produto 2",
+    "object_repr": "Métodos Digitais Produto 2",
     "action_flag": 3,
     "change_message": ""
   }
@@ -995,7 +995,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "92",
-    "object_repr": "Mtodos Digitais Produto 3",
+    "object_repr": "Métodos Digitais Produto 3",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1008,7 +1008,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "93",
-    "object_repr": "Mtodos Digitais Produto 4",
+    "object_repr": "Métodos Digitais Produto 4",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1021,7 +1021,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "94",
-    "object_repr": "Mtodos Digitais Produto 5",
+    "object_repr": "Métodos Digitais Produto 5",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1034,7 +1034,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "95",
-    "object_repr": "Mtodos Digitais Produto 6",
+    "object_repr": "Métodos Digitais Produto 6",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1047,7 +1047,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "96",
-    "object_repr": "Mtodos Digitais Produto 7",
+    "object_repr": "Métodos Digitais Produto 7",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1060,7 +1060,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "97",
-    "object_repr": "Mtodos Digitais Produto 8",
+    "object_repr": "Métodos Digitais Produto 8",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1073,7 +1073,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "98",
-    "object_repr": "Mtodos Digitais Produto 9",
+    "object_repr": "Métodos Digitais Produto 9",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1086,7 +1086,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "123",
-    "object_repr": "Mtodo 1",
+    "object_repr": "MÃ©todo 1",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1099,7 +1099,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "132",
-    "object_repr": "Mtodo 10",
+    "object_repr": "MÃ©todo 10",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1112,7 +1112,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "133",
-    "object_repr": "Mtodo 11",
+    "object_repr": "MÃ©todo 11",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1125,7 +1125,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "134",
-    "object_repr": "Mtodo 12",
+    "object_repr": "MÃ©todo 12",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1138,7 +1138,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "135",
-    "object_repr": "Mtodo 13",
+    "object_repr": "MÃ©todo 13",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1151,7 +1151,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "136",
-    "object_repr": "Mtodo 14",
+    "object_repr": "MÃ©todo 14",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1164,7 +1164,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "137",
-    "object_repr": "Mtodo 15",
+    "object_repr": "MÃ©todo 15",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1177,7 +1177,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "138",
-    "object_repr": "Mtodo 16",
+    "object_repr": "MÃ©todo 16",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1190,7 +1190,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "139",
-    "object_repr": "Mtodo 17",
+    "object_repr": "MÃ©todo 17",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1203,7 +1203,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "140",
-    "object_repr": "Mtodo 18",
+    "object_repr": "MÃ©todo 18",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1216,7 +1216,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "141",
-    "object_repr": "Mtodo 19",
+    "object_repr": "MÃ©todo 19",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1229,7 +1229,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "124",
-    "object_repr": "Mtodo 2",
+    "object_repr": "MÃ©todo 2",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1242,7 +1242,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "142",
-    "object_repr": "Mtodo 20",
+    "object_repr": "MÃ©todo 20",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1255,7 +1255,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "143",
-    "object_repr": "Mtodo 21",
+    "object_repr": "MÃ©todo 21",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1268,7 +1268,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "144",
-    "object_repr": "Mtodo 22",
+    "object_repr": "MÃ©todo 22",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1281,7 +1281,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "145",
-    "object_repr": "Mtodo 23",
+    "object_repr": "MÃ©todo 23",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1294,7 +1294,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "146",
-    "object_repr": "Mtodo 24",
+    "object_repr": "MÃ©todo 24",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1307,7 +1307,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "147",
-    "object_repr": "Mtodo 25",
+    "object_repr": "MÃ©todo 25",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1320,7 +1320,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "148",
-    "object_repr": "Mtodo 26",
+    "object_repr": "MÃ©todo 26",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1333,7 +1333,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "149",
-    "object_repr": "Mtodo 27",
+    "object_repr": "MÃ©todo 27",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1346,7 +1346,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "150",
-    "object_repr": "Mtodo 28",
+    "object_repr": "MÃ©todo 28",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1359,7 +1359,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "151",
-    "object_repr": "Mtodo 29",
+    "object_repr": "MÃ©todo 29",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1372,7 +1372,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "125",
-    "object_repr": "Mtodo 3",
+    "object_repr": "MÃ©todo 3",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1385,7 +1385,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "152",
-    "object_repr": "Mtodo 30",
+    "object_repr": "MÃ©todo 30",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1398,7 +1398,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "153",
-    "object_repr": "Mtodo 31",
+    "object_repr": "MÃ©todo 31",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1411,7 +1411,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "154",
-    "object_repr": "Mtodo 32",
+    "object_repr": "MÃ©todo 32",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1424,7 +1424,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "155",
-    "object_repr": "Mtodo 33",
+    "object_repr": "MÃ©todo 33",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1437,7 +1437,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "126",
-    "object_repr": "Mtodo 4",
+    "object_repr": "MÃ©todo 4",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1450,7 +1450,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "127",
-    "object_repr": "Mtodo 5",
+    "object_repr": "MÃ©todo 5",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1463,7 +1463,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "128",
-    "object_repr": "Mtodo 6",
+    "object_repr": "MÃ©todo 6",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1476,7 +1476,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "129",
-    "object_repr": "Mtodo 7",
+    "object_repr": "MÃ©todo 7",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1489,7 +1489,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "130",
-    "object_repr": "Mtodo 8",
+    "object_repr": "MÃ©todo 8",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1502,7 +1502,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "131",
-    "object_repr": "Mtodo 9",
+    "object_repr": "MÃ©todo 9",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1515,7 +1515,7 @@
     "user": 1,
     "content_type": 7,
     "object_id": "11",
-    "object_repr": "Mtodos",
+    "object_repr": "MÃ©todos",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1528,7 +1528,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "156",
-    "object_repr": "Frmula da Importao",
+    "object_repr": "Fórmula da Importação",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1541,7 +1541,7 @@
     "user": 1,
     "content_type": 7,
     "object_id": "12",
-    "object_repr": "Mtodos Digitais",
+    "object_repr": "MÃ©todos Digitais",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1567,7 +1567,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "157",
-    "object_repr": "Frmula da Importao",
+    "object_repr": "Fórmula da Importação",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
   }
@@ -1580,7 +1580,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "170",
-    "object_repr": "Barriga Chapada Fcil e Rpido",
+    "object_repr": "Barriga Chapada Fácil e Rápido",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1606,7 +1606,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "163",
-    "object_repr": "INTESTINO LIVRE E SAUDVEL",
+    "object_repr": "INTESTINO LIVRE E SAUDÁVEL",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1632,7 +1632,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "167",
-    "object_repr": "Meditao Cigana (audio terapia lei da atrao)",
+    "object_repr": "Meditação Cigana (audio terapia lei da atração)",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1645,7 +1645,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "166",
-    "object_repr": "Meditao Consciente | Bem-Estar e Viver",
+    "object_repr": "Meditação Consciente | Bem-Estar e Viver",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1658,7 +1658,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "162",
-    "object_repr": "Mtodo Sprint de Definio Muscular",
+    "object_repr": "Método Sprint de Definição Muscular",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1710,7 +1710,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "161",
-    "object_repr": "Sndrome Fngica",
+    "object_repr": "Síndrome Fúngica",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1723,7 +1723,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "168",
-    "object_repr": "Voc + SECA E DEFINIDA",
+    "object_repr": "Você + SECA E DEFINIDA",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1749,7 +1749,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "172",
-    "object_repr": "Vencendo a Depresso",
+    "object_repr": "Vencendo a Depressão",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1762,7 +1762,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "173",
-    "object_repr": "Liberte-se da Sndrome do Pnico",
+    "object_repr": "Liberte-se da Síndrome do Pânico",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1775,7 +1775,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "174",
-    "object_repr": "Sndrome Fngica",
+    "object_repr": "Síndrome Fúngica",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1788,7 +1788,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "175",
-    "object_repr": "Monetizando Servios com Canva",
+    "object_repr": "Monetizando Serviços com Canva",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1814,7 +1814,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "177",
-    "object_repr": "Treinamento Sua Prpria Lavanderia 2",
+    "object_repr": "Treinamento Sua Própria Lavanderia 2",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1827,7 +1827,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "177",
-    "object_repr": "Treinamento Sua Prpria Lavanderia 2",
+    "object_repr": "Treinamento Sua Própria Lavanderia 2",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
   }
@@ -1840,7 +1840,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "178",
-    "object_repr": "Rei da seduo",
+    "object_repr": "Rei da sedução",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1866,7 +1866,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "180",
-    "object_repr": "Mtodo Sprint de Definio Muscular",
+    "object_repr": "Método Sprint de Definição Muscular",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1879,7 +1879,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "180",
-    "object_repr": "Mtodo Sprint de Definio Muscular",
+    "object_repr": "Método Sprint de Definição Muscular",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
   }
@@ -1892,7 +1892,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "181",
-    "object_repr": "INTESTINO LIVRE E SAUDVEL",
+    "object_repr": "INTESTINO LIVRE E SAUDÁVEL",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1957,7 +1957,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "185",
-    "object_repr": "A \"Netflix\" da Musculao",
+    "object_repr": "A \"Netflix\" da Musculação",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1970,7 +1970,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "185",
-    "object_repr": "A \"Netflix\" da Musculao",
+    "object_repr": "A \"Netflix\" da Musculação",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
   }
@@ -1996,7 +1996,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "187",
-    "object_repr": "Meditao Consciente | Bem-Estar e Viver",
+    "object_repr": "Meditação Consciente | Bem-Estar e Viver",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -2009,7 +2009,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "187",
-    "object_repr": "Meditao Consciente | Bem-Estar e Viver",
+    "object_repr": "Meditação Consciente | Bem-Estar e Viver",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
   }
@@ -2022,7 +2022,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "188",
-    "object_repr": "Sexo Tntrico",
+    "object_repr": "Sexo Tântrico",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -2035,7 +2035,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "189",
-    "object_repr": "Meditao Budista",
+    "object_repr": "Meditação Budista",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -2048,7 +2048,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "190",
-    "object_repr": "Meditao Cigana (audio terapia lei da atrao)",
+    "object_repr": "Meditação Cigana (audio terapia lei da atração)",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -2061,7 +2061,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "191",
-    "object_repr": "Voc + SECA E DEFINIDA",
+    "object_repr": "Você + SECA E DEFINIDA",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -2087,7 +2087,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "193",
-    "object_repr": "Nova Renda em 1 Ms: Transforme Seu Potencial em Lucro",
+    "object_repr": "Nova Renda em 1 Mês: Transforme Seu Potencial em Lucro",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -2113,7 +2113,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "195",
-    "object_repr": "Barriga Chapada Fcil e Rpido",
+    "object_repr": "Barriga Chapada Fácil e Rápido",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -2152,7 +2152,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "191",
-    "object_repr": "Voc + SECA E DEFINIDA",
+    "object_repr": "Você + SECA E DEFINIDA",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"External url\"]}}]"
   }
@@ -2178,7 +2178,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "175",
-    "object_repr": "Monetizando Servios com Canva",
+    "object_repr": "Monetizando Serviços com Canva",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
   }
@@ -2204,7 +2204,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "198",
-    "object_repr": "Curso de funilaria express e pintura de automveis",
+    "object_repr": "Curso de funilaria express e pintura de automóveis",
     "action_flag": 3,
     "change_message": ""
   }
@@ -2217,7 +2217,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "200",
-    "object_repr": "Curso Completo de Esttica automotiva: Do bsico ao avanado",
+    "object_repr": "Curso Completo de Estética automotiva: Do básico ao avançado",
     "action_flag": 3,
     "change_message": ""
   }
@@ -2230,7 +2230,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "205",
-    "object_repr": "Curso de Informtica e celulares completo",
+    "object_repr": "Curso de Informática e celulares completo",
     "action_flag": 3,
     "change_message": ""
   }
@@ -2243,7 +2243,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "201",
-    "object_repr": "Curso de Polimento Tcnico e Vitrificao 1.0",
+    "object_repr": "Curso de Polimento Técnico e Vitrificação 1.0",
     "action_flag": 3,
     "change_message": ""
   }
@@ -2256,7 +2256,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "199",
-    "object_repr": "Curso de funilaria express e pintura de automveis",
+    "object_repr": "Curso de funilaria express e pintura de automóveis",
     "action_flag": 3,
     "change_message": ""
   }
@@ -2269,7 +2269,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "202",
-    "object_repr": "Impressora 3D Fcil",
+    "object_repr": "Impressora 3D Fácil",
     "action_flag": 3,
     "change_message": ""
   }
@@ -2295,7 +2295,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "203",
-    "object_repr": "Tcnicas de Vendas",
+    "object_repr": "Técnicas de Vendas",
     "action_flag": 3,
     "change_message": ""
   }
@@ -2308,7 +2308,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "206",
-    "object_repr": "Curso de funilaria express e pintura de automveis",
+    "object_repr": "Curso de funilaria express e pintura de automóveis",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
   }
@@ -2321,7 +2321,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "207",
-    "object_repr": "Curso Completo de Esttica automotiva: Do bsico ao avanado",
+    "object_repr": "Curso Completo de Estética automotiva: Do básico ao avançado",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
   }
@@ -2334,7 +2334,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "208",
-    "object_repr": "Curso de Polimento Tcnico e Vitrificao 1.0",
+    "object_repr": "Curso de Polimento Técnico e Vitrificação 1.0",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
   }
@@ -2347,7 +2347,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "209",
-    "object_repr": "Impressora 3D Fcil",
+    "object_repr": "Impressora 3D Fácil",
     "action_flag": 3,
     "change_message": ""
   }
@@ -2360,7 +2360,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "210",
-    "object_repr": "Tcnicas de Vendas",
+    "object_repr": "Técnicas de Vendas",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
   }
@@ -2386,7 +2386,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "212",
-    "object_repr": "Curso de Informtica e celulares completo",
+    "object_repr": "Curso de Informática e celulares completo",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
   }
@@ -2412,7 +2412,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "214",
-    "object_repr": "Curso de alongamento de unhas fibra de Vidro 6 em 1 com 5 Bnus",
+    "object_repr": "Curso de alongamento de unhas fibra de Vidro 6 em 1 com 5 Bônus",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
   }
@@ -2464,7 +2464,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "217",
-    "object_repr": "Curso de Micropigmentao BNUS: Design de Sobrancelha Incluso",
+    "object_repr": "Curso de Micropigmentação BÔNUS: Design de Sobrancelha Incluso",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
   }
@@ -2490,7 +2490,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "219",
-    "object_repr": "Curso extenso de clios fio a fio para iniciantes",
+    "object_repr": "Curso extensão de cílios fio a fio para iniciantes",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
   }
@@ -2503,7 +2503,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "221",
-    "object_repr": "Micropigmentao labial",
+    "object_repr": "Micropigmentação labial",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Available\"]}}]"
   }
@@ -2607,7 +2607,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "228",
-    "object_repr": "Prtese Capilar Masculina - Manuteno",
+    "object_repr": "Prótese Capilar Masculina - Manutenção",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
   }
@@ -2620,7 +2620,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "229",
-    "object_repr": "Massagem Tntrica Experience - Desperte O Prazer",
+    "object_repr": "Massagem Tântrica Experience - Desperte O Prazer",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
   }
@@ -2633,7 +2633,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "230",
-    "object_repr": "Drenagem Linftica Completa [2025] + Segredo para Fidelizar e Atrair novas clientes.",
+    "object_repr": "Drenagem Linfática Completa [2025] + Segredo para Fidelizar e Atrair novas clientes.",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Price\"]}}]"
   }
@@ -2685,7 +2685,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "234",
-    "object_repr": "Curso Bronzeamento a Jato + Montagem Biquni de Fita",
+    "object_repr": "Curso Bronzeamento a Jato + Montagem Biquíni de Fita",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\", \"Price\"]}}]"
   }
@@ -2711,7 +2711,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "236",
-    "object_repr": "Quiropraxia Oriental e Tcnicas Teraputicas do Mtodo Equilibrium",
+    "object_repr": "Quiropraxia Oriental e Técnicas Terapêuticas do Método Equilibrium",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Price\"]}}]"
   }
@@ -2724,7 +2724,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "236",
-    "object_repr": "Quiropraxia Oriental e Tcnicas Teraputicas do Mtodo Equilibrium",
+    "object_repr": "Quiropraxia Oriental e Técnicas Terapêuticas do Método Equilibrium",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
   }
@@ -2737,7 +2737,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "206",
-    "object_repr": "Curso de funilaria express e pintura de automveis",
+    "object_repr": "Curso de funilaria express e pintura de automóveis",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
   }
@@ -2750,7 +2750,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "208",
-    "object_repr": "Curso de Polimento Tcnico e Vitrificao 1.0",
+    "object_repr": "Curso de Polimento Técnico e Vitrificação 1.0",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
   }
@@ -2776,7 +2776,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "212",
-    "object_repr": "Curso de Informtica e celulares completo",
+    "object_repr": "Curso de Informática e celulares completo",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
   }
@@ -2984,7 +2984,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "45",
-    "object_repr": "Eletrodomsticos Produto 1",
+    "object_repr": "Eletrodomésticos Produto 1",
     "action_flag": 3,
     "change_message": ""
   }
@@ -2997,7 +2997,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "54",
-    "object_repr": "Eletrodomsticos Produto 10",
+    "object_repr": "Eletrodomésticos Produto 10",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3010,7 +3010,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "55",
-    "object_repr": "Eletrodomsticos Produto 11",
+    "object_repr": "Eletrodomésticos Produto 11",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3023,7 +3023,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "56",
-    "object_repr": "Eletrodomsticos Produto 12",
+    "object_repr": "Eletrodomésticos Produto 12",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3036,7 +3036,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "57",
-    "object_repr": "Eletrodomsticos Produto 13",
+    "object_repr": "Eletrodomésticos Produto 13",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3049,7 +3049,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "58",
-    "object_repr": "Eletrodomsticos Produto 14",
+    "object_repr": "Eletrodomésticos Produto 14",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3062,7 +3062,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "59",
-    "object_repr": "Eletrodomsticos Produto 15",
+    "object_repr": "Eletrodomésticos Produto 15",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3075,7 +3075,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "46",
-    "object_repr": "Eletrodomsticos Produto 2",
+    "object_repr": "Eletrodomésticos Produto 2",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3088,7 +3088,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "47",
-    "object_repr": "Eletrodomsticos Produto 3",
+    "object_repr": "Eletrodomésticos Produto 3",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3101,7 +3101,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "48",
-    "object_repr": "Eletrodomsticos Produto 4",
+    "object_repr": "Eletrodomésticos Produto 4",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3114,7 +3114,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "49",
-    "object_repr": "Eletrodomsticos Produto 5",
+    "object_repr": "Eletrodomésticos Produto 5",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3127,7 +3127,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "50",
-    "object_repr": "Eletrodomsticos Produto 6",
+    "object_repr": "Eletrodomésticos Produto 6",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3140,7 +3140,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "51",
-    "object_repr": "Eletrodomsticos Produto 7",
+    "object_repr": "Eletrodomésticos Produto 7",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3153,7 +3153,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "52",
-    "object_repr": "Eletrodomsticos Produto 8",
+    "object_repr": "Eletrodomésticos Produto 8",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3166,7 +3166,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "53",
-    "object_repr": "Eletrodomsticos Produto 9",
+    "object_repr": "Eletrodomésticos Produto 9",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3582,7 +3582,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "60",
-    "object_repr": "Eletrnicos Produto 1",
+    "object_repr": "Eletrônicos Produto 1",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3595,7 +3595,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "69",
-    "object_repr": "Eletrnicos Produto 10",
+    "object_repr": "Eletrônicos Produto 10",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3608,7 +3608,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "70",
-    "object_repr": "Eletrnicos Produto 11",
+    "object_repr": "Eletrônicos Produto 11",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3621,7 +3621,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "71",
-    "object_repr": "Eletrnicos Produto 12",
+    "object_repr": "Eletrônicos Produto 12",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3634,7 +3634,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "72",
-    "object_repr": "Eletrnicos Produto 13",
+    "object_repr": "Eletrônicos Produto 13",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3647,7 +3647,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "73",
-    "object_repr": "Eletrnicos Produto 14",
+    "object_repr": "Eletrônicos Produto 14",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3660,7 +3660,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "74",
-    "object_repr": "Eletrnicos Produto 15",
+    "object_repr": "Eletrônicos Produto 15",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3673,7 +3673,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "61",
-    "object_repr": "Eletrnicos Produto 2",
+    "object_repr": "Eletrônicos Produto 2",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3686,7 +3686,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "62",
-    "object_repr": "Eletrnicos Produto 3",
+    "object_repr": "Eletrônicos Produto 3",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3699,7 +3699,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "63",
-    "object_repr": "Eletrnicos Produto 4",
+    "object_repr": "Eletrônicos Produto 4",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3712,7 +3712,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "64",
-    "object_repr": "Eletrnicos Produto 5",
+    "object_repr": "Eletrônicos Produto 5",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3725,7 +3725,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "65",
-    "object_repr": "Eletrnicos Produto 6",
+    "object_repr": "Eletrônicos Produto 6",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3738,7 +3738,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "66",
-    "object_repr": "Eletrnicos Produto 7",
+    "object_repr": "Eletrônicos Produto 7",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3751,7 +3751,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "67",
-    "object_repr": "Eletrnicos Produto 8",
+    "object_repr": "Eletrônicos Produto 8",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3764,7 +3764,7 @@
     "user": 1,
     "content_type": 8,
     "object_id": "68",
-    "object_repr": "Eletrnicos Produto 9",
+    "object_repr": "Eletrônicos Produto 9",
     "action_flag": 3,
     "change_message": ""
   }
@@ -3790,7 +3790,7 @@
     "user": 1,
     "content_type": 9,
     "object_id": "1",
-    "object_repr": "TESTE orinio",
+    "object_repr": "TESTE orinição",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -4100,7 +4100,7 @@
   "model": "auth.permission",
   "pk": 33,
   "fields": {
-    "name": "Can add Promoo",
+    "name": "Can add Promoção",
     "content_type": 9,
     "codename": "add_promotion"
   }
@@ -4109,7 +4109,7 @@
   "model": "auth.permission",
   "pk": 34,
   "fields": {
-    "name": "Can change Promoo",
+    "name": "Can change Promoção",
     "content_type": 9,
     "codename": "change_promotion"
   }
@@ -4118,7 +4118,7 @@
   "model": "auth.permission",
   "pk": 35,
   "fields": {
-    "name": "Can delete Promoo",
+    "name": "Can delete Promoção",
     "content_type": 9,
     "codename": "delete_promotion"
   }
@@ -4127,7 +4127,7 @@
   "model": "auth.permission",
   "pk": 36,
   "fields": {
-    "name": "Can view Promoo",
+    "name": "Can view Promoção",
     "content_type": 9,
     "codename": "view_promotion"
   }
@@ -4242,7 +4242,7 @@
   "model": "catalog.category",
   "pk": 1,
   "fields": {
-    "name": "Eletrnicos",
+    "name": "Eletrônicos",
     "slug": "eletronicos"
   }
 },
@@ -4258,7 +4258,7 @@
   "model": "catalog.category",
   "pk": 4,
   "fields": {
-    "name": "Eletrodomsticos",
+    "name": "Eletrodomésticos",
     "slug": "eletrodomesticos"
   }
 },
@@ -4290,7 +4290,7 @@
   "model": "catalog.category",
   "pk": 8,
   "fields": {
-    "name": "Mtodos Digitais",
+    "name": "Métodos Digitais",
     "slug": "metodos-digitais"
   }
 },
@@ -4299,10 +4299,10 @@
   "pk": 157,
   "fields": {
     "category": 8,
-    "name": "Frmula da Importao",
+    "name": "Fórmula da Importação",
     "slug": "formula-da-importacao",
     "image": "products/2025/06/03/newphoto_3.png",
-    "description": "Descubra como lucrar at 10k em uma nica venda de produtos importados dos EUA ou Paraguai.\r\n\r\nVoc vai dominar a compra mais barata de qualquer produto, e a poder usar para lucrar ou economizar.\r\n\r\nEssa habilidade vai garantir economia ou lucro para voc e sua famlia para sempre.\r\n\r\nVoc pode importar:\r\n\r\n* Eletrnicos e smartphones\r\n\r\n** Roupas e acessrios\r\n\r\n** Relgios e perfumes\r\n\r\n** Brinquedos e utenslios\r\n\r\n** Diversos outros produtos diferentes.\r\n\r\nInclusive, tem fornecedores que fazem drop, onde voc vende sem precisar comprar estoque.\r\n\r\nTudo isso, de forma 100% legal e com lucratividade muito acima da mdia.\r\n\r\nInscreva-se em nosso mtodo \"Frmula da Importao\" e domine essa habilidade incrvel.\r\n\r\nO acesso  enviado imediatamente no seu e-mail.",
+    "description": "Descubra como lucrar até 10k em uma única venda de produtos importados dos EUA ou Paraguai.\r\n\r\nVocê vai dominar a compra mais barata de qualquer produto, e aí poderá usar para lucrar ou economizar.\r\n\r\nEssa habilidade vai garantir economia ou lucro para você e sua família para sempre.\r\n\r\nVocê pode importar:\r\n\r\n* Eletrônicos e smartphones\r\n\r\n** Roupas e acessórios\r\n\r\n** Relógios e perfumes\r\n\r\n** Brinquedos e utensílios\r\n\r\n** Diversos outros produtos diferentes.\r\n\r\nInclusive, tem fornecedores que fazem drop, onde você vende sem precisar comprar estoque.\r\n\r\nTudo isso, de forma 100% legal e com lucratividade muito acima da média.\r\n\r\nInscreva-se em nosso método \"Fórmula da Importação\" e domine essa habilidade incrível.\r\n\r\nO acesso é enviado imediatamente no seu e-mail.",
     "price": "197.00",
     "available": true,
     "external_url": "https://chk.eduzz.com/8WPD8Q1NWP",
@@ -4318,7 +4318,7 @@
     "name": "21 formas de fazer 3000 em 30 dias",
     "slug": "21-formas-de-fazer-3000-em-30-dias",
     "image": "products/2025/06/03/newphoto_2.png",
-    "description": "Uma soluo documentada em mais de 90 pginas que possui a finalidade de te direcionar a encontrar o que pode ser uma alternativa de fonte de renda para voc.",
+    "description": "Uma solução documentada em mais de 90 páginas que possui a finalidade de te direcionar a encontrar o que pode ser uma alternativa de fonte de renda para você.",
     "price": "21.00",
     "available": true,
     "external_url": "https://chk.eduzz.com/1595260?a=71055458",
@@ -4331,10 +4331,10 @@
   "pk": 172,
   "fields": {
     "category": 8,
-    "name": "Vencendo a Depresso",
+    "name": "Vencendo a Depressão",
     "slug": "vencendo-a-depressao",
     "image": "products/2025/06/03/PLR-em-Video-Depressao.webp",
-    "description": "Este programa de Combate  Depresso  uma srie de vdeos que foi cuidadosamente desenvolvida para te auxiliar a entender, reconhecer e encontrar um tratamento adequado para a depresso. Consumindo este contedo, voc ganhar clareza sobre o tema e aprender como assumir o controle total de seus pensamentos, sentimentos e emoes para combater a depresso de maneira eficaz para que ela no volte nunca mais.\r\n\r\nSrie de vdeos dividida em 6 Mdulos com o total de 18 vdeos explicativos",
+    "description": "Este programa de ‘Combate à Depressão’ é uma série de vídeos que foi cuidadosamente desenvolvida para te auxiliar a entender, reconhecer e encontrar um tratamento adequado para a depressão. Consumindo este conteúdo, você ganhará clareza sobre o tema e aprenderá como assumir o controle total de seus pensamentos, sentimentos e emoções para combater a depressão de maneira eficaz para que ela não volte nunca mais.\r\n\r\nSérie de vídeos dividida em 6 Módulos com o total de 18 vídeos explicativos",
     "price": "97.00",
     "available": true,
     "external_url": "https://combateadepressao.com.br/?mcr=AJW25354493",
@@ -4347,10 +4347,10 @@
   "pk": 173,
   "fields": {
     "category": 8,
-    "name": "Liberte-se da Sndrome do Pnico",
+    "name": "Liberte-se da Síndrome do Pânico",
     "slug": "liberte-se-da-sindrome-do-panico",
     "image": "products/2025/06/03/1.png",
-    "description": "Ele vai te mostrar como Eu fiz para me livrar de todos esses sintomas citados acima e vrios outros causados pela Sndrome do Pnico, te dando confiana para viver uma vida mais saudvel.",
+    "description": "Ele vai te mostrar como Eu fiz para me livrar de todos esses sintomas citados acima e vários outros causados pela Síndrome do Pânico, te dando confiança para viver uma vida mais saudável.",
     "price": "67.00",
     "available": true,
     "external_url": "https://supereiasindrome.com.br/?mcr=AHD25354505",
@@ -4363,10 +4363,10 @@
   "pk": 174,
   "fields": {
     "category": 8,
-    "name": "Sndrome Fngica",
+    "name": "Síndrome Fúngica",
     "slug": "sindrome-fungica",
     "image": "products/2025/06/03/newphoto_4.png",
-    "description": "Voc sofre com dores nas articulaes, dores no corpo, fadiga intensa, cansao mental, queda de cabelo, unhas fracas, gazes e dores intestinais ?\r\nEsses sintomas e muitos outros relacionados a esses podem ser sinais de um problema oculto, que est afetando a sua saude\r\nDescubra tudo no nosso e-book Sindrome fungica Guia completo de tratamento natural.\r\n?? *O Que Voc Vai Aprender:*\r\n- Como a sndrome fngica pode estar afetando seu corpo.\r\n- Tratamentos naturais para aliviar sintomas e restaurar sua sade.\r\n- Alimentos e suplementos que realmente funcionam.\r\n\r\n*No Perca Tempo!* Saiba como vencer esses problemas de uma vez por todas.",
+    "description": "Você sofre com dores nas articulações, dores no corpo, fadiga intensa, cansaço mental, queda de cabelo, unhas fracas, gazes e dores intestinais ?\r\nEsses sintomas e muitos outros relacionados a esses podem ser sinais de um problema oculto, que está afetando a sua saude\r\nDescubra tudo no nosso e-book Sindrome fungica Guia completo de tratamento natural.\r\n?? *O Que Você Vai Aprender:*\r\n- Como a síndrome fúngica pode estar afetando seu corpo.\r\n- Tratamentos naturais para aliviar sintomas e restaurar sua saúde.\r\n- Alimentos e suplementos que realmente funcionam.\r\n\r\n*Não Perca Tempo!* Saiba como vencer esses problemas de uma vez por todas.",
     "price": "19.90",
     "available": true,
     "external_url": "https://chk.eduzz.com/2436395?a=71055458",
@@ -4379,10 +4379,10 @@
   "pk": 175,
   "fields": {
     "category": 8,
-    "name": "Monetizando Servios com Canva",
+    "name": "Monetizando Serviços com Canva",
     "slug": "monetizando-servicos-com-canva",
     "image": "products/2025/06/03/2aadffab-9214-4d0c-b866-a17da5f4584a.webp",
-    "description": "Aprenda a usar o poder do Canva para criar servios visuais de alta demanda, desde designs para redes sociais at materiais grficos personalizados. Neste curto, voc vai descobrir como monetizar suas habilidades de design, oferecendo servios a empresas, influencers e empreendedores que precisam de contedo profissional, mas acessvel. Com as ferramentas certas e uma boa estratgia, voc pode transformar sua criatividade em uma fonte constante de lucro.",
+    "description": "Aprenda a usar o poder do Canva para criar serviços visuais de alta demanda, desde designs para redes sociais até materiais gráficos personalizados. Neste curto, você vai descobrir como monetizar suas habilidades de design, oferecendo serviços a empresas, influencers e empreendedores que precisam de conteúdo profissional, mas acessível. Com as ferramentas certas e uma boa estratégia, você pode transformar sua criatividade em uma fonte constante de lucro.",
     "price": "127.00",
     "available": true,
     "external_url": "https://pay.cakto.com.br/7oMEpT2?affiliate=BG5hEt5H",
@@ -4398,7 +4398,7 @@
     "name": "Superando a Ansiedade",
     "slug": "superando-a-ansiedade",
     "image": "products/2025/06/03/newphoto_5.png",
-    "description": "Voc est constantemente com medo, preocupado ou talvez nervoso? Voc tem problemas para dormir ou sempre se sente cansado e em pnico?\r\n\r\nVoc sempre se pergunta por que no consegue parar de se preocupar e por que ainda est com medo?\r\n\r\nVoc gostaria de poder superar esses problemas para comear a viver a vida que deseja? Esses tipos de sentimentos e emoes so frequentemente diagnosticados como ansiedade.",
+    "description": "Você está constantemente com medo, preocupado ou talvez nervoso? Você tem problemas para dormir ou sempre se sente cansado e em pânico?\r\n\r\nVocê sempre se pergunta por que não consegue parar de se preocupar e por que ainda está com medo?\r\n\r\nVocê gostaria de poder superar esses problemas para começar a viver a vida que deseja? Esses tipos de sentimentos e emoções são frequentemente diagnosticados como ansiedade.",
     "price": "67.00",
     "available": true,
     "external_url": "https://chk.eduzz.com/2034343?a=71055458",
@@ -4411,10 +4411,10 @@
   "pk": 177,
   "fields": {
     "category": 8,
-    "name": "Treinamento Sua Prpria Lavanderia 2",
+    "name": "Treinamento Sua Própria Lavanderia 2",
     "slug": "treinamento-sua-propria-lavanderia-2",
     "image": "products/2025/06/03/cdb2a269-a730-4cd4-9a5a-f28af67d9c5f.webp",
-    "description": "Aprenda a construir uma Lavanderia Independente do absoluto zero com algum que vive desse mercado a anos!",
+    "description": "Aprenda a construir uma Lavanderia Independente do absoluto zero com alguém que vive desse mercado a anos!",
     "price": "197.00",
     "available": true,
     "external_url": "https://pay.cakto.com.br/86fv55m?affiliate=8CDiZLfG",
@@ -4427,10 +4427,10 @@
   "pk": 178,
   "fields": {
     "category": 8,
-    "name": "Rei da seduo",
+    "name": "Rei da sedução",
     "slug": "rei-da-seducao",
     "image": "products/2025/06/03/img_builder_381c8ce6-c036-4f70-9618-6b5136b9621f_f55440cbe0a04ee1956_8poSsnU.jpg",
-    "description": "Rei da Seduo: o homem que domina a arte de conquistar com charme, confiana e estilo. Cada gesto, cada palavra,  uma dana irresistvel que atrai todos os olhares. Elegncia, presena e carisma so seus superpoderes. O verdadeiro mestre da seduo, onde cada detalhe  pensado para deixar uma marca inesquecvel.",
+    "description": "Rei da Sedução: o homem que domina a arte de conquistar com charme, confiança e estilo. Cada gesto, cada palavra, é uma dança irresistível que atrai todos os olhares. Elegância, presença e carisma são seus superpoderes. O verdadeiro mestre da sedução, onde cada detalhe é pensado para deixar uma marca inesquecível.",
     "price": "97.00",
     "available": true,
     "external_url": "https://pay.kiwify.com.br/4Gi0L7Z?afid=ceAdatx4",
@@ -4446,7 +4446,7 @@
     "name": "Reprograme Sua Mentalidade para Ganhar Dinheiro",
     "slug": "reprograme-sua-mentalidade-para-ganhar-dinheiro",
     "image": "products/2025/06/03/img_builder_d661f7fa-2ef2-435d-8982-a7f01ae1c018_b0d4021e856840c3ab8_kNF485u.jpg",
-    "description": "Abra sua mente para a abundncia e desbloqueie o seu potencial financeiro. Neste curto, voc vai descobrir como transformar crenas limitantes em pensamentos de prosperidade, adotando hbitos e atitudes que atraem oportunidades e riqueza. O sucesso comea na mente  mude seus pensamentos, mude sua vida.",
+    "description": "Abra sua mente para a abundância e desbloqueie o seu potencial financeiro. Neste curto, você vai descobrir como transformar crenças limitantes em pensamentos de prosperidade, adotando hábitos e atitudes que atraem oportunidades e riqueza. O sucesso começa na mente — mude seus pensamentos, mude sua vida.",
     "price": "198.00",
     "available": true,
     "external_url": "https://pay.kiwify.com.br/7G9NuNX?afid=qxKQ8Ts1",
@@ -4459,10 +4459,10 @@
   "pk": 180,
   "fields": {
     "category": 8,
-    "name": "Mtodo Sprint de Definio Muscular",
+    "name": "Método Sprint de Definição Muscular",
     "slug": "metodo-sprint-de-definicao-muscular",
     "image": "products/2025/06/03/newphoto_6.png",
-    "description": "A sua Jornada de Transformao Corporal comea aqui!\r\n\r\nPor mais de uma dcada, mergulhei fundo no universo fitness, atravs da faculdade de Educao Fsica, leituras, cursos extras, e sempre observando, vivendo e estudando os segredos para o sucesso da transformao corporal.\r\n\r\nAgora,  com grande empolgao que venho compartilhar com vocs meu segundo livro de transformao corporal. Repleto de informaes valiosas, procurei deixar este material o mais completo possvel e com uma linguagem de fcil entendimento!\r\n\r\nVoc j se sentiu frustrado com dietas restritivas que prometem resultados milagrosos, mas que, no final, acabam sabotando seus esforos?\r\n\r\nOu talvez j se perguntou por que seus treinos parecem no trazer os resultados que voc tanto deseja? Acredite, voc no est sozinho!\r\n\r\nNeste livro, revelo por que a maioria das pessoas enfrenta desafios para emagrecer e definir o corpo. Mais importante, ofereo solues eficazes baseadas em cincia, reflexes pessoais e orientaes valiosas.\r\n\r\nO que voc encontrar no Mtodo Sprint de Definio Muscular?\r\n\r\nAntes de descrever o que voc encontrar neste livro, deixo claro que: voc pode transformar seu corpo com academia ou sem academia. Ento no se preocupe se voc no faz musculao. Aprender o que funciona para mudar seu shape mesmo que treine em casa ou no parque.\r\n\r\nMtodo Sprint de Definio Muscular!\r\n\r\nTransforme sua Relao com a Alimentao: Adeus s dietas frustrantes e restritivas! Compartilho um mtodo simples e eficaz para construir uma relao saudvel com a comida e ainda alcanar seus objetivos de forma sustentvel.\r\n\r\nTreino Inteligente para Resultados Reais: Desvende os segredos dos treinos mais eficazes e saiba como adapt-los ao seu corpo e metas especficas. Segredos do treino de musculao que a maioria dos profissionais desconhecem ou so preguiosos para te ensinar e como melhorar seu shape em casa ou com treinos no parque.\r\n\r\nA Jornada para o Corpo dos Sonhos: Com base em conhecimentos cientficos comprovados, te mostro o caminho para alcanar o shape que sempre desejou, de maneira realista e saudvel.\r\n\r\nFelicidade e Equilbrio: Saiba como os aspectos emocionais influenciam seus resultados e aprenda como ajustar seus hbitos e emoes para potencializar seus ganhos.\r\n\r\nBnus Especial:\r\n\r\nComo Eliminei 15 kg em menos de 4 meses antes de entrar na faculdade em 2013.\r\n\r\nComo Eliminei 10 kg na quarentena de 2020 sem academia!\r\n\r\nSo mais de 200 pginas repletas de informaes, e no final, tambm deixo alguns exemplos de fichas de treino que j utilizei ao longo dos meus 18 anos de treinos. Treinos de fora, hipertrofia, calistenia, como potencializar o ganho de massa magra e eliminar gordura e muito mais!\r\n\r\nTenho certeza que este livro se transformar em um manual de treino, mentalidade e dieta para voc. Podendo mudar completamente sua forma de enxergar o mundo e o universo fitness!\r\n\r\nE o melhor de tudo, voc pode revisar o contedo sempre que quiser!\r\n\r\nBora! Bora mudar esse shape.",
+    "description": "A sua Jornada de Transformação Corporal começa aqui!\r\n\r\nPor mais de uma década, mergulhei fundo no universo fitness, através da faculdade de Educação Física, leituras, cursos extras, e sempre observando, vivendo e estudando os segredos para o sucesso da transformação corporal.\r\n\r\nAgora, é com grande empolgação que venho compartilhar com vocês meu segundo livro de transformação corporal. Repleto de informações valiosas, procurei deixar este material o mais completo possível e com uma linguagem de fácil entendimento!\r\n\r\nVocê já se sentiu frustrado com dietas restritivas que prometem resultados milagrosos, mas que, no final, acabam sabotando seus esforços?\r\n\r\nOu talvez já se perguntou por que seus treinos parecem não trazer os resultados que você tanto deseja? Acredite, você não está sozinho!\r\n\r\nNeste livro, revelo por que a maioria das pessoas enfrenta desafios para emagrecer e definir o corpo. Mais importante, ofereço soluções eficazes baseadas em ciência, reflexões pessoais e orientações valiosas.\r\n\r\nO que você encontrará no Método Sprint de Definição Muscular?\r\n\r\nAntes de descrever o que você encontrará neste livro, deixo claro que: você pode transformar seu corpo com academia ou sem academia. Então não se preocupe se você não faz musculação. Aprenderá o que funciona para mudar seu shape mesmo que treine em casa ou no parque.\r\n\r\nMétodo Sprint de Definição Muscular!\r\n\r\nTransforme sua Relação com a Alimentação: Adeus às dietas frustrantes e restritivas! Compartilho um método simples e eficaz para construir uma relação saudável com a comida e ainda alcançar seus objetivos de forma sustentável.\r\n\r\nTreino Inteligente para Resultados Reais: Desvende os segredos dos treinos mais eficazes e saiba como adaptá-los ao seu corpo e metas específicas. Segredos do treino de musculação que a maioria dos profissionais desconhecem ou são preguiçosos para te ensinar e como melhorar seu shape em casa ou com treinos no parque.\r\n\r\nA Jornada para o Corpo dos Sonhos: Com base em conhecimentos científicos comprovados, te mostro o caminho para alcançar o shape que sempre desejou, de maneira realista e saudável.\r\n\r\nFelicidade e Equilíbrio: Saiba como os aspectos emocionais influenciam seus resultados e aprenda como ajustar seus hábitos e emoções para potencializar seus ganhos.\r\n\r\nBônus Especial:\r\n\r\nComo Eliminei 15 kg em menos de 4 meses antes de entrar na faculdade em 2013.\r\n\r\nComo Eliminei 10 kg na quarentena de 2020 sem academia!\r\n\r\nSão mais de 200 páginas repletas de informações, e no final, também deixo alguns exemplos de fichas de treino que já utilizei ao longo dos meus 18 anos de treinos. Treinos de força, hipertrofia, calistenia, como potencializar o ganho de massa magra e eliminar gordura e muito mais!\r\n\r\nTenho certeza que este livro se transformará em um manual de treino, mentalidade e dieta para você. Podendo mudar completamente sua forma de enxergar o mundo e o universo fitness!\r\n\r\nE o melhor de tudo, você pode revisar o conteúdo sempre que quiser!\r\n\r\nBora! Bora mudar esse shape.",
     "price": "49.90",
     "available": true,
     "external_url": "https://chk.eduzz.com/2075661?a=71055458",
@@ -4475,10 +4475,10 @@
   "pk": 181,
   "fields": {
     "category": 8,
-    "name": "INTESTINO LIVRE E SAUDVEL",
+    "name": "INTESTINO LIVRE E SAUDÁVEL",
     "slug": "intestino-livre-e-saudavel",
     "image": "products/2025/06/03/newphoto_7.png",
-    "description": "Se voc vive em guerra com seu intestino tudo ir mudar a partir de agora.\r\nO programa INTESTINO LIVRE E SAUDVEL  para voc que no aguenta mais essa guerra diria.\r\n\r\nEle Foi criado para pessoa que sofrem com o intestino preso, abdmen distendido,\r\nGases intestinais, hemorroida inflamada fissura anal, enxaqueca e outros sintomas relacionados a intestino preso!\r\n\r\nEu vou te ensinar receitas super prticas, fceis e muito poderosas, feitas a base de Aveia, Uvas Passas, Amndoas e especiarias. Voc vai contar com o poder das ervas medicinais, passo a passo com ingredientes fceis de encontrar.",
+    "description": "Se você vive em guerra com seu intestino tudo irá mudar a partir de agora.\r\nO programa INTESTINO LIVRE E SAUDÁVEL é para você que não aguenta mais essa guerra diária.\r\n\r\nEle Foi criado para pessoa que sofrem com o intestino preso, abdômen distendido,\r\nGases intestinais, hemorroida inflamada fissura anal, enxaqueca e outros sintomas relacionados a intestino preso!\r\n\r\nEu vou te ensinar receitas super práticas, fáceis e muito poderosas, feitas a base de Aveia, Uvas Passas, Amêndoas e especiarias. Você vai contar com o poder das ervas medicinais, passo a passo com ingredientes fáceis de encontrar.",
     "price": "97.00",
     "available": true,
     "external_url": "https://chk.eduzz.com/2300054?a=71055458",
@@ -4494,7 +4494,7 @@
     "name": "Manual da Hipertrofia - Ebooks",
     "slug": "manual-da-hipertrofia-ebooks",
     "image": "products/2025/06/03/newphoto_8.png",
-    "description": "O \"Manual da Hipertrofia\"  um guia completo e abrangente para quem deseja alcanar resultados expressivos no ganho de massa muscular. Desenvolvido por um especialista em fitness e musculao, este manual oferece um programa de treinamento avanado, tcnicas de exerccios especficas e informaes nutricionais valiosas para ajud-lo a atingir seus objetivos de forma eficaz.\r\n\r\nCom uma abordagem prtica e acessvel, o autor apresenta uma srie de estratgias e mtodos testados e comprovados que iro ajud-lo a maximizar seus ganhos musculares e a alcanar resultados duradouros. Se voc est buscando informaes precisas e confiveis sobre hipertrofia, este manual  a escolha certa para voc.\r\n\r\nAlm disso, o \"Manual da Hipertrofia\" no  apenas um guia de treinamento e nutrio. Ele tambm inclui uma seo sobre a psicologia por trs do sucesso no fitness, com conselhos prticos para manter a motivao, superar os obstculos e alcanar seus objetivos de forma consistente.\r\n\r\nSe voc est pronto para levar sua jornada de fitness para o prximo nvel, o \"Manual da Hipertrofia \"  o guia completo que voc precisa.",
+    "description": "O \"Manual da Hipertrofia\" é um guia completo e abrangente para quem deseja alcançar resultados expressivos no ganho de massa muscular. Desenvolvido por um especialista em fitness e musculação, este manual oferece um programa de treinamento avançado, técnicas de exercícios específicas e informações nutricionais valiosas para ajudá-lo a atingir seus objetivos de forma eficaz.\r\n\r\nCom uma abordagem prática e acessível, o autor apresenta uma série de estratégias e métodos testados e comprovados que irão ajudá-lo a maximizar seus ganhos musculares e a alcançar resultados duradouros. Se você está buscando informações precisas e confiáveis sobre hipertrofia, este manual é a escolha certa para você.\r\n\r\nAlém disso, o \"Manual da Hipertrofia\" não é apenas um guia de treinamento e nutrição. Ele também inclui uma seção sobre a psicologia por trás do sucesso no fitness, com conselhos práticos para manter a motivação, superar os obstáculos e alcançar seus objetivos de forma consistente.\r\n\r\nSe você está pronto para levar sua jornada de fitness para o próximo nível, o \"Manual da Hipertrofia \" é o guia completo que você precisa.",
     "price": "97.00",
     "available": true,
     "external_url": "https://chk.eduzz.com/2301297?a=71055458",
@@ -4510,7 +4510,7 @@
     "name": "seca & define",
     "slug": "seca-define",
     "image": "products/2025/06/03/Captura_de_tela_2025-06-03_205414.png",
-    "description": "Esse desafio  para voc, mulher que, entre a correria do dia a dia, ainda encontra tempo para cuidar de si mesma. \r\n\r\nSe voc j cansou de tentar dietas malucas que s trazem frustrao e que resultados reais e duradouros, o Desafio SECA & DEFINE  o que voc precisa! \r\n\r\nImagine queimar gordura, ganhar massa muscular, e transformar seu corpo sem abrir a mo dos prazeres da vida. \r\n\r\nCom acompanhamento profissional e uma comunidade que voc entende, voc ver as mudanas em poucos dias , sentindo-se mais confiante a cada passo.",
+    "description": "Esse desafio é para você, mulher que, entre a correria do dia a dia, ainda encontra tempo para cuidar de si mesma. \r\n\r\nSe você já cansou de tentar dietas malucas que só trazem frustração e que resultados reais e duradouros, o Desafio SECA & DEFINE é o que você precisa! \r\n\r\nImagine queimar gordura, ganhar massa muscular, e transformar seu corpo sem abrir a mão dos prazeres da vida. \r\n\r\nCom acompanhamento profissional e uma comunidade que você entende, você verá as mudanças em poucos dias , sentindo-se mais confiante a cada passo.",
     "price": "97.00",
     "available": true,
     "external_url": "https://comunidademyshape.com/desafio-seca-e-define/",
