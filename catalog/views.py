@@ -6,7 +6,7 @@ from django.db.models import Q
 def home(request, category_slug=None):
     category = None
     categories = Category.objects.all()
-    products = Product.objects.filter(available=True).order_by('id').distinct('id')
+    products = Product.objects.filter(available=True).order_by('id')  # Removido distinct('id') para teste
     query = request.GET.get('q', '')
     
     if query:
@@ -24,9 +24,12 @@ def home(request, category_slug=None):
     page = request.GET.get('page', 1)
     try:
         page = int(page)
+        print(f"Página solicitada: {page} (convertido de {request.GET.get('page')})")
     except ValueError:
         page = 1
+        print(f"Página inválida, usando padrão: {page}")
     offset = (page - 1) * 12
+    print(f"Offset calculado para página {page}: {offset}")
     products_page = products[offset:offset + 12]
 
     product_ids = [p.id for p in products_page]
