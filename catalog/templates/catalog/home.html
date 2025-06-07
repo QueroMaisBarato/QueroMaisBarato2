@@ -49,7 +49,7 @@
                 <p class="text-sm font-medium leading-normal">Todos os Produtos</p>
             </a>
             {% for c in categories %}
-            <a href="{{ c.get_absolute_url }}#produtos" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if category.slug == c.slug %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
+            <a href="{% url 'catalog:home_by_category' c.slug %}#produtos" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if category.slug == c.slug %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
                 <p class="text-sm font-medium leading-normal">{{ c.name }}</p>
             </a>
             {% endfor %}
@@ -89,13 +89,17 @@ document.addEventListener('DOMContentLoaded', function() {
             const query = loadMoreButton.getAttribute('data-query');
             const url = `?page=${nextPage}&q=${encodeURIComponent(query)}`;
 
+            // Log para depuração: número de produtos no DOM antes da requisição
+            const existingProductCount = productList.querySelectorAll('[data-product-id]').length;
+            console.log(`Total de produtos no DOM antes da página ${nextPage}: ${existingProductCount}`);
+
+            // Log para depuração: IDs dos produtos já exibidos
+            const existingProducts = Array.from(productList.querySelectorAll('[data-product-id]')).map(el => el.getAttribute('data-product-id'));
+            console.log(`IDs dos produtos já exibidos antes da página ${nextPage}:`, existingProducts);
+
             // Desativa o botão
             loadMoreButton.disabled = true;
             loadMoreButton.textContent = 'Carregando...';
-
-            // Log para depuração: IDs dos produtos já exibidos
-            const existingProducts = Array.from(productList.querySelectorAll('.text-base.font-medium')).map(el => el.textContent);
-            console.log(`Produtos já exibidos antes da página ${nextPage}:`, existingProducts);
 
             fetch(url, {
                 headers: {
@@ -109,17 +113,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 return response.json();
             })
             .then(data => {
-                // Log para depuração: extrair nomes dos produtos do HTML retornado
+                // Log para depuração: extrair IDs dos produtos do HTML retornado
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(data.html, 'text/html');
-                const productNames = Array.from(doc.querySelectorAll('.text-base.font-medium')).map(el => el.textContent);
-                console.log(`Produtos carregados na página ${nextPage}:`, productNames);
+                const productIds = Array.from(doc.querySelectorAll('[data-product-id]')).map(el => el.getAttribute('data-product-id'));
+                console.log(`IDs dos produtos carregados na página ${nextPage}:`, productIds);
 
                 // Verifica duplicatas
-                const duplicates = productNames.filter(name => existingProducts.includes(name));
+                const duplicates = productIds.filter(id => existingProducts.includes(id));
                 if (duplicates.length > 0) {
                     console.warn(`Produtos duplicados detectados na página ${nextPage}:`, duplicates);
                 }
+
+                // Log para depuração: número de produtos retornados
+                console.log(`Número de produtos retornados na página ${nextPage}: ${productIds.length}`);
 
                 // Remove mensagem de "Nenhum produto encontrado"
                 const noProductsMessage = productList.querySelector('.col-span-full');
@@ -129,6 +136,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Adiciona os novos produtos ao grid
                 productList.insertAdjacentHTML('beforeend', data.html);
+
+                // Log para depuração: número total de produtos após adição
+                const newProductCount = productList.querySelectorAll('[data-product-id]').length;
+                console.log(`Total de produtos no DOM após a página ${nextPage}: ${newProductCount}`);
 
                 // Atualiza o botão
                 if (data.has_next) {

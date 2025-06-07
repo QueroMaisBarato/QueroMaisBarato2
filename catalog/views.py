@@ -20,6 +20,10 @@ def home(request, category_slug=None):
         category = get_object_or_404(Category, slug=category_slug)
         products = products.filter(category=category)
     
+    # Log para depuração: total de produtos disponíveis
+    total_products = products.count()
+    print(f"Total de produtos disponíveis: {total_products}")
+
     paginator = Paginator(products, 12)  # 12 produtos por página
     page = request.GET.get('page', 1)
     try:
@@ -34,16 +38,24 @@ def home(request, category_slug=None):
         product_ids = [p.id for p in products_page]
         product_names = [p.name for p in products_page]
         print(f"Produtos na página {page}: IDs={product_ids}, Names={product_names}")
-        # Requisição AJAX: retorna apenas o HTML dos produtos
+        
+        # Teste manual de paginação
+        offset = (int(page) - 1) * 12
+        products_page_manual = products[offset:offset + 12]
+        manual_ids = [p.id for p in products_page_manual]
+        manual_names = [p.name for p in products_page_manual]
+        print(f"Produtos na página {page} (manual): IDs={manual_ids}, Names={manual_names}")
+
+        # Requisição AJAX: usa a paginação manual para teste
         html = render_to_string(
             'catalog/product/_card.html',
-            {'products': products_page},
+            {'products': products_page_manual},
             request=request
         )
         return JsonResponse({
             'html': html,
-            'has_next': products_page.has_next(),
-            'next_page': products_page.next_page_number() if products_page.has_next() else None
+            'has_next': offset + 12 < total_products,
+            'next_page': int(page) + 1 if offset + 12 < total_products else None
         })
 
     # Log para depuração na carga inicial

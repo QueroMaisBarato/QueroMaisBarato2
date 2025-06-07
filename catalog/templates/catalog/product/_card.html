@@ -1,12 +1,12 @@
 {% for product in products %}
-<div class="flex flex-col h-full min-h-[370px] max-h-[420px] bg-white rounded-xl shadow-sm p-3 justify-between">
+<div class="flex flex-col h-full min-h-[370px] max-h-[420px] bg-white rounded-xl shadow-sm p-3 justify-between" data-product-id="{{ product.id }}">
     {% if product.image_url %}
         <a href="{{ product.get_absolute_url }}" class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl overflow-hidden" style="background-image: url('{{ product.image_url }}')"></a>
     {% else %}
         <a href="{{ product.get_absolute_url }}" class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl overflow-hidden" style="background-image: url('/static/images/placeholder.jpg')"></a>
     {% endif %}
     <div class="flex flex-col flex-1 gap-1 mt-2">
-        <p class="text-[#101518] text-base font-medium leading-normal">{{ product.name }}</p>
+        <p class="text-[#101518] text-base font-medium leading-normal">{{ product.name }} (ID: {{ product.id }})</p>
         <p class="text-[#5c748a] text-sm font-normal leading-normal">{{ product.description|truncatechars:60 }}</p>
         <p class="text-[#101518] text-lg font-bold leading-normal mt-1">R$ {{ product.price }}</p>
     </div>
