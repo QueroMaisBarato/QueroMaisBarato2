@@ -78,16 +78,24 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loadMoreButton = document.getElementById('load-more');
     const productList = document.getElementById('product-list');
+    let isFetching = false; // Previne múltiplas requisições simultâneas
 
     if (loadMoreButton) {
         loadMoreButton.addEventListener('click', function() {
+            if (isFetching) return; // Impede cliques duplicados
+            isFetching = true;
+
             const nextPage = loadMoreButton.getAttribute('data-next-page');
             const query = loadMoreButton.getAttribute('data-query');
             const url = `?page=${nextPage}&q=${encodeURIComponent(query)}`;
 
-            // Desativa o botão para evitar múltiplos cliques
+            // Desativa o botão
             loadMoreButton.disabled = true;
             loadMoreButton.textContent = 'Carregando...';
+
+            // Log para depuração: IDs dos produtos já exibidos
+            const existingProducts = Array.from(productList.querySelectorAll('.text-base.font-medium')).map(el => el.textContent);
+            console.log(`Produtos já exibidos antes da página ${nextPage}:`, existingProducts);
 
             fetch(url, {
                 headers: {
@@ -101,11 +109,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 return response.json();
             })
             .then(data => {
-                // Log para depuração: extrair IDs dos produtos do HTML
+                // Log para depuração: extrair nomes dos produtos do HTML retornado
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(data.html, 'text/html');
                 const productNames = Array.from(doc.querySelectorAll('.text-base.font-medium')).map(el => el.textContent);
                 console.log(`Produtos carregados na página ${nextPage}:`, productNames);
+
+                // Verifica duplicatas
+                const duplicates = productNames.filter(name => existingProducts.includes(name));
+                if (duplicates.length > 0) {
+                    console.warn(`Produtos duplicados detectados na página ${nextPage}:`, duplicates);
+                }
 
                 // Remove mensagem de "Nenhum produto encontrado"
                 const noProductsMessage = productList.querySelector('.col-span-full');
@@ -124,11 +138,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     loadMoreButton.remove();
                 }
+                isFetching = false;
             })
             .catch(error => {
                 console.error('Erro ao carregar produtos:', error);
                 loadMoreButton.disabled = false;
                 loadMoreButton.textContent = 'Ver mais produtos';
+                isFetching = false;
             });
         });
     }

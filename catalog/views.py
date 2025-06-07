@@ -31,7 +31,9 @@ def home(request, category_slug=None):
 
     if request.headers.get('x-requested-with') == 'XMLHttpRequest':
         # Log para depuração
-        print(f"Produtos na página {page}: {[p.id for p in products_page]}")
+        product_ids = [p.id for p in products_page]
+        product_names = [p.name for p in products_page]
+        print(f"Produtos na página {page}: IDs={product_ids}, Names={product_names}")
         # Requisição AJAX: retorna apenas o HTML dos produtos
         html = render_to_string(
             'catalog/product/_card.html',
@@ -45,7 +47,9 @@ def home(request, category_slug=None):
         })
 
     # Log para depuração na carga inicial
-    print(f"Produtos na página inicial {page}: {[p.id for p in products_page]}")
+    product_ids = [p.id for p in products_page]
+    product_names = [p.name for p in products_page]
+    print(f"Produtos na página inicial {page}: IDs={product_ids}, Names={product_names}")
     return render(request,
                  'catalog/home.html',
                  {'category': category,
