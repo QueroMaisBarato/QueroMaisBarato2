@@ -8,7 +8,7 @@ from django.template.loader import render_to_string
 def home(request, category_slug=None):
     category = None
     categories = Category.objects.all()
-    products = Product.objects.filter(available=True).order_by('id')  # Ordem fixa para evitar duplicatas
+    products = Product.objects.filter(available=True).order_by('id').distinct()  # Garante unicidade
     query = request.GET.get('q', '')
     
     if query:
@@ -50,7 +50,6 @@ def home(request, category_slug=None):
                   'query': query})
 
 def product_list(request, category_slug=None):
-    # Mesma lógica que home, se necessário
     return home(request, category_slug)
 
 def product_detail(request, id, slug):

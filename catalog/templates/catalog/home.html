@@ -94,8 +94,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     'X-Requested-With': 'XMLHttpRequest'
                 }
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro na requisição AJAX');
+                }
+                return response.json();
+            })
             .then(data => {
+                // Remove qualquer mensagem de "Nenhum produto encontrado" antes de adicionar novos produtos
+                const noProductsMessage = productList.querySelector('.col-span-full');
+                if (noProductsMessage) {
+                    noProductsMessage.remove();
+                }
+
                 // Adiciona os novos produtos ao grid
                 productList.insertAdjacentHTML('beforeend', data.html);
 
