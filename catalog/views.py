@@ -57,9 +57,6 @@ def home(request, category_slug=None):
                   'products': products_page,
                   'query': query})
 
-def product_list(request, category_slug=None):
-    return home(request, category_slug)
-
 def product_detail(request, id, slug):
     product = get_object_or_404(Product,
                                id=id,
