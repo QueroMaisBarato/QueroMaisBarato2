@@ -96,12 +96,18 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Erro na requisição AJAX');
+                    throw new Error('Erro na requisição AJAX: ' + response.statusText);
                 }
                 return response.json();
             })
             .then(data => {
-                // Remove qualquer mensagem de "Nenhum produto encontrado" antes de adicionar novos produtos
+                // Log para depuração: extrair IDs dos produtos do HTML
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data.html, 'text/html');
+                const productNames = Array.from(doc.querySelectorAll('.text-base.font-medium')).map(el => el.textContent);
+                console.log(`Produtos carregados na página ${nextPage}:`, productNames);
+
+                // Remove mensagem de "Nenhum produto encontrado"
                 const noProductsMessage = productList.querySelector('.col-span-full');
                 if (noProductsMessage) {
                     noProductsMessage.remove();
@@ -110,13 +116,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Adiciona os novos produtos ao grid
                 productList.insertAdjacentHTML('beforeend', data.html);
 
-                // Atualiza o botão "Ver mais produtos"
+                // Atualiza o botão
                 if (data.has_next) {
                     loadMoreButton.setAttribute('data-next-page', data.next_page);
                     loadMoreButton.disabled = false;
                     loadMoreButton.textContent = 'Ver mais produtos';
                 } else {
-                    loadMoreButton.remove(); // Remove o botão se não houver mais páginas
+                    loadMoreButton.remove();
                 }
             })
             .catch(error => {

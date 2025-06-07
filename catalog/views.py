@@ -8,7 +8,7 @@ from django.template.loader import render_to_string
 def home(request, category_slug=None):
     category = None
     categories = Category.objects.all()
-    products = Product.objects.filter(available=True).order_by('id').distinct()  # Garante unicidade
+    products = Product.objects.filter(available=True).order_by('id').distinct('id')  # Unicidade por ID
     query = request.GET.get('q', '')
     
     if query:
@@ -30,6 +30,8 @@ def home(request, category_slug=None):
         products_page = paginator.page(paginator.num_pages)
 
     if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+        # Log para depuração
+        print(f"Produtos na página {page}: {[p.id for p in products_page]}")
         # Requisição AJAX: retorna apenas o HTML dos produtos
         html = render_to_string(
             'catalog/product/_card.html',
@@ -42,6 +44,8 @@ def home(request, category_slug=None):
             'next_page': products_page.next_page_number() if products_page.has_next() else None
         })
 
+    # Log para depuração na carga inicial
+    print(f"Produtos na página inicial {page}: {[p.id for p in products_page]}")
     return render(request,
                  'catalog/home.html',
                  {'category': category,
