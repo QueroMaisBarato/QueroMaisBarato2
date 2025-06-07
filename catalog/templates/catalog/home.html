@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const query = loadMoreButton.getAttribute('data-query');
             const url = `?page=${nextPage}&q=${encodeURIComponent(query)}`;
 
-            console.log(`Requisição AJAX para página ${nextPage}`);
+            console.log(`Requisição AJAX para página ${nextPage} com URL: ${url}`);
             fetch(url, {
                 headers: {
                     'X-Requested-With': 'XMLHttpRequest'

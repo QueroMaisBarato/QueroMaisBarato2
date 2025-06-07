@@ -31,7 +31,7 @@ def home(request, category_slug=None):
 
     product_ids = [p.id for p in products_page]
     product_names = [p.name for p in products_page]
-    print(f"Produtos na página {page}: IDs={product_ids}, Names={product_names}")
+    print(f"Produtos na página {page}: Offset={offset}, IDs={product_ids}, Names={product_names}")
 
     if request.headers.get('x-requested-with') == 'XMLHttpRequest':
         html = ""
