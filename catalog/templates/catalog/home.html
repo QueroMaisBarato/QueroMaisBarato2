@@ -6,12 +6,16 @@
 {% block content %}
 <div class="flex flex-col gap-8">
     <!-- Banner Principal -->
-    <div class="w-full rounded-xl h-[300px] relative overflow-visible mb-8 flex items-center" style="background: linear-gradient(90deg, #e53935 0%, #ffb300 30%, #8e24aa 65%, #1e88e5 100%);">
+    <div class="w-full rounded-xl h-[300px] relative overflow-hidden mb-8 flex items-center" style="background: linear-gradient(90deg, #e53935 0%, #ffb300 30%, #8e24aa 65%, #1e88e5 100%);">
         <div class="flex-1 flex justify-center items-center h-full">
-            <img src="{% static 'images/ecommerce.png' %}" alt="E-commerce" class="h-[500px] w-auto object-contain">
+            <img src="{% static 'images/banner-3.png' %}" alt="E-commerce" class="h-full w-auto object-contain">
         </div>
-        <div class="flex-1 flex flex-col justify-center items-start h-full px-8">
-            <h1 class="text-4xl md:text-5xl font-bold text-[#fff] leading-tight drop-shadow-md">Encontre os melhores<br>preços</h1>
+        <div class="flex-1 flex flex-col justify-center items-start h-full px-8 gap-2">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#fff] leading-tight drop-shadow-md">Quer economizar de verdade?</h1>
+            <p class="text-xl text-[#fff] drop-shadow-md">Um especialista te mostra o caminho!</p>
+            <a href="#produtos" class="flex h-12 items-center justify-center rounded-xl bg-white text-[#101518] text-base font-bold leading-normal px-8 hover:bg-gray-100 transition-colors">
+                Acesse agora!
+            </a>
         </div>
     </div>
 
