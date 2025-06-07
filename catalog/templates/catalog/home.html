@@ -5,17 +5,13 @@
 
 {% block content %}
 <div id="produtos">
-    <div id="product-list" class="grid grid-cols-1 gap-6 p-4">
-        {% for product in products %}
-            {% include "catalog/product/_card.html" %}
-        {% empty %}
-            <p>Nenhum produto encontrado.</p>
-        {% endfor %}
+    <div id="product-list">
+        {% include "catalog/product/_card.html" %}
     </div>
 
     {% if products.has_next %}
-    <div class="flex justify-center mt-6">
-        <button id="load-more" class="px-4 py-2 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50" data-next-page="{{ products.next_page_number }}" data-query="{{ query|default:'' }}">Ver mais produtos</button>
+    <div>
+        <button id="load-more" data-next-page="{{ products.next_page_number }}" data-query="{{ query|default:'' }}">Ver mais produtos</button>
     </div>
     {% endif %}
 </div>
@@ -25,23 +21,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const loadMoreButton = document.getElementById('load-more');
     const productList = document.getElementById('product-list');
     let isFetching = false;
+    let lastPageLoaded = 1; // Rastreia a última página carregada
 
     if (loadMoreButton) {
         loadMoreButton.addEventListener('click', function() {
             if (isFetching) return;
             isFetching = true;
 
-            const nextPage = loadMoreButton.getAttribute('data-next-page');
+            const nextPage = parseInt(loadMoreButton.getAttribute('data-next-page'));
+            if (nextPage <= lastPageLoaded) {
+                console.warn(`Página ${nextPage} já carregada. Ignorando.`);
+                isFetching = false;
+                return;
+            }
+
             const query = loadMoreButton.getAttribute('data-query');
             const url = `?page=${nextPage}&q=${encodeURIComponent(query)}`;
 
-            // Log: produtos no DOM antes da requisição
-            const existingProducts = Array.from(productList.querySelectorAll('.product-card')).map(el => el.getAttribute('data-product-id'));
-            console.log(`Antes da página ${nextPage}: ${existingProducts.length} produtos no DOM`, existingProducts);
-
-            loadMoreButton.disabled = true;
-            loadMoreButton.textContent = 'Carregando...';
-
+            console.log(`Requisição AJAX para página ${nextPage}`);
             fetch(url, {
                 headers: {
                     'X-Requested-With': 'XMLHttpRequest'
@@ -54,29 +51,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 return response.json();
             })
             .then(data => {
-                // Log: produtos retornados
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(data.html, 'text/html');
                 const productIds = Array.from(doc.querySelectorAll('.product-card')).map(el => el.getAttribute('data-product-id'));
                 console.log(`Página ${nextPage}: ${productIds.length} produtos retornados`, productIds);
 
-                // Verifica duplicatas
-                const duplicates = productIds.filter(id => existingProducts.includes(id));
-                if (duplicates.length > 0) {
-                    console.warn(`Duplicatas na página ${nextPage}:`, duplicates);
-                }
+                // Limpa o DOM para teste (remover após confirmar)
+                // productList.innerHTML = '';
 
-                // Anexa os novos produtos
                 productList.insertAdjacentHTML('beforeend', data.html);
 
-                // Log: produtos no DOM após anexação
                 const newProducts = Array.from(productList.querySelectorAll('.product-card')).map(el => el.getAttribute('data-product-id'));
-                console.log(`Após a página ${nextPage}: ${newProducts.length} produtos no DOM`, newProducts);
+                console.log(`Após página ${nextPage}: ${newProducts.length} produtos no DOM`, newProducts);
 
-                // Atualiza o botão
+                lastPageLoaded = nextPage;
+
                 if (data.has_next) {
                     loadMoreButton.setAttribute('data-next-page', data.next_page);
-                    loadMoreButton.disabled = false;
                     loadMoreButton.textContent = 'Ver mais produtos';
                 } else {
                     loadMoreButton.remove();
@@ -85,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(error => {
                 console.error('Erro ao carregar produtos:', error);
-                loadMoreButton.disabled = false;
                 loadMoreButton.textContent = 'Ver mais produtos';
                 isFetching = false;
             });

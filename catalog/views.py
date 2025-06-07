@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from .models import Category, Product
 from django.db.models import Q
-from django.template.loader import render_to_string
 
 def home(request, category_slug=None):
     category = None
@@ -19,11 +18,9 @@ def home(request, category_slug=None):
         category = get_object_or_404(Category, slug=category_slug)
         products = products.filter(category=category)
     
-    # Log: total de produtos
     total_products = products.count()
     print(f"Total de produtos disponíveis: {total_products}")
 
-    # Paginação manual
     page = request.GET.get('page', 1)
     try:
         page = int(page)
@@ -32,19 +29,16 @@ def home(request, category_slug=None):
     offset = (page - 1) * 12
     products_page = products[offset:offset + 12]
 
-    # Log: produtos na página
     product_ids = [p.id for p in products_page]
     product_names = [p.name for p in products_page]
     print(f"Produtos na página {page}: IDs={product_ids}, Names={product_names}")
 
     if request.headers.get('x-requested-with') == 'XMLHttpRequest':
-        html = render_to_string(
-            'catalog/product/_card.html',
-            {'products': products_page},
-            request=request
-        )
-        # Log: tamanho do HTML retornado
-        print(f"Tamanho do HTML retornado na página {page}: {len(html)}")
+        # Renderização manual para teste
+        html = ""
+        for product in products_page:
+            html += f'<div class="product-card" data-product-id="{product.id}">Produto: {product.name} (ID: {product.id})</div>'
+        print(f"HTML gerado na página {page}: {len(html)} caracteres, {html.count('product-card')} produtos")
         return JsonResponse({
             'html': html,
             'has_next': offset + 12 < total_products,
