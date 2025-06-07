@@ -64,6 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const query = loadMoreButton.getAttribute('data-query');
             const url = `?page=${nextPage}&q=${encodeURIComponent(query)}`;
 
+            // Desativa o botão para evitar múltiplos cliques
+            loadMoreButton.disabled = true;
+            loadMoreButton.textContent = 'Carregando...';
+
             fetch(url, {
                 headers: {
                     'X-Requested-With': 'XMLHttpRequest'
@@ -77,11 +81,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Atualiza o botão "Ver mais produtos"
                 if (data.has_next) {
                     loadMoreButton.setAttribute('data-next-page', data.next_page);
+                    loadMoreButton.disabled = false;
+                    loadMoreButton.textContent = 'Ver mais produtos';
                 } else {
                     loadMoreButton.remove(); // Remove o botão se não houver mais páginas
                 }
             })
-            .catch(error => console.error('Erro ao carregar produtos:', error));
+            .catch(error => {
+                console.error('Erro ao carregar produtos:', error);
+                loadMoreButton.disabled = false;
+                loadMoreButton.textContent = 'Ver mais produtos';
+            });
         });
     }
 });
