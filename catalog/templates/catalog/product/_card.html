@@ -1,17 +1,12 @@
-<div class="flex flex-col h-full min-h-[370px] max-h-[420px] bg-white rounded-xl shadow-sm p-3 justify-between">
-    {% if product.image_url %}
-        <a href="{{ product.get_absolute_url }}" class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl overflow-hidden" style="background-image: url('{{ product.image_url }}')"></a>
-    {% else %}
-        <a href="{{ product.get_absolute_url }}" class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl overflow-hidden" style="background-image: url('/static/images/placeholder.jpg')"></a>
-    {% endif %}
-    <div class="flex flex-col flex-1 gap-1 mt-2">
-        <p class="text-[#101518] text-base font-medium leading-normal">{{ product.name }}</p>
-        <p class="text-[#5c748a] text-sm font-normal leading-normal">{{ product.description|truncatechars:60 }}</p>
-        <p class="text-[#101518] text-lg font-bold leading-normal mt-1">R$ {{ product.price }}</p>
-    </div>
-    {% if product.external_url %}
-        <a href="{{ product.external_url }}" target="_blank" rel="noopener noreferrer" class="flex h-10 items-center justify-center rounded-xl bg-[#101518] text-white text-sm font-bold leading-normal mt-2 w-full">
-            Comprar Agora
-        </a>
-    {% endif %}
+{% for product in products %}
+<div class="product-card">
+    <a href="{% url 'catalog:product_detail' product.id product.slug %}">
+        <img src="{{ product.image_url|default:'/static/images/default.jpg' }}" alt="{{ product.name }}" class="w-full h-48 object-cover rounded-t-xl">
+        <div class="p-4">
+            <h3 class="text-lg font-medium text-[#101518]">{{ product.name }}</h3>
+            <p class="text-sm text-[#5c748a]">{{ product.description|truncatewords:20 }}</p>
+            <p class="text-base font-bold text-[#101518]">{{ product.price }}</p>
+        </div>
+    </a>
 </div>
+{% endfor %}

@@ -24,7 +24,7 @@
         </form>
 
         <div class="flex gap-3 p-3 pr-4 overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-thin scrollbar-thumb-[#eaedf1] scrollbar-track-transparent">
-            <a href="{% url 'catalog:product_list' %}" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if not category %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
+            <a href="{% url 'catalog:home' %}" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if not category %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
                 <p class="text-sm font-medium leading-normal">Todos os Produtos</p>
             </a>
             {% for c in categories %}
@@ -34,39 +34,56 @@
             {% endfor %}
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+        <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
             {% for product in products %}
                 {% include "catalog/product/_card.html" %}
-            {% empty %}
+            {% endfor %}
+            {% if not products %}
             <div class="col-span-full text-center py-8">
                 <p class="text-[#5c748a] text-base font-normal leading-normal">Nenhum produto encontrado.</p>
             </div>
-            {% endfor %}
+            {% endif %}
         </div>
 
-        {% if products.has_other_pages %}
+        {% if products.has_next %}
         <div class="flex justify-center mt-6">
-            <nav class="inline-flex rounded-md shadow-sm" aria-label="Paginação">
-                {% if products.has_previous %}
-                    <a href="?q={{ query }}&page={{ products.previous_page_number }}" class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Anterior</a>
-                {% else %}
-                    <span class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-200 bg-gray-100 text-sm font-medium text-gray-400 cursor-not-allowed">Anterior</span>
-                {% endif %}
-                {% for num in products.paginator.page_range %}
-                    {% if products.number == num %}
-                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-[#101518] text-white text-sm font-bold">{{ num }}</span>
-                    {% else %}
-                        <a href="?q={{ query }}&page={{ num }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">{{ num }}</a>
-                    {% endif %}
-                {% endfor %}
-                {% if products.has_next %}
-                    <a href="?q={{ query }}&page={{ products.next_page_number }}" class="relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Próxima</a>
-                {% else %}
-                    <span class="relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-200 bg-gray-100 text-sm font-medium text-gray-400 cursor-not-allowed">Próxima</span>
-                {% endif %}
-            </nav>
+            <button id="load-more" class="relative inline-flex items-center px-4 py-2 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50" data-next-page="{{ products.next_page_number }}" data-query="{{ query|default:'' }}">Ver mais produtos</button>
         </div>
         {% endif %}
     </div>
 </div>
-{% endblock %} 
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreButton = document.getElementById('load-more');
+    const productList = document.getElementById('product-list');
+
+    if (loadMoreButton) {
+        loadMoreButton.addEventListener('click', function() {
+            const nextPage = loadMoreButton.getAttribute('data-next-page');
+            const query = loadMoreButton.getAttribute('data-query');
+            const url = `?page=${nextPage}&q=${encodeURIComponent(query)}`;
+
+            fetch(url, {
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Adiciona os novos produtos ao grid
+                productList.insertAdjacentHTML('beforeend', data.html);
+
+                // Atualiza o botão "Ver mais produtos"
+                if (data.has_next) {
+                    loadMoreButton.setAttribute('data-next-page', data.next_page);
+                } else {
+                    loadMoreButton.remove(); // Remove o botão se não houver mais páginas
+                }
+            })
+            .catch(error => console.error('Erro ao carregar produtos:', error));
+        });
+    }
+});
+</script>
+{% endblock %}
