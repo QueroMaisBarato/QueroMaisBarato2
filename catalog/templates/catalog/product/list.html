@@ -24,17 +24,17 @@
         </form>
 
         <div class="flex gap-3 p-3 pr-4 overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-thin scrollbar-thumb-[#eaedf1] scrollbar-track-transparent">
-            <a href="{% url 'catalog:home' %}#produtos" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if not category %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
+            <a href="{% url 'catalog:product_list' %}" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if not category %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
                 <p class="text-sm font-medium leading-normal">Todos os Produtos</p>
             </a>
             {% for c in categories %}
-            <a href="{{ c.get_absolute_url }}#produtos" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if category.slug == c.slug %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
+            <a href="{{ c.get_absolute_url }}" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if category.slug == c.slug %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
                 <p class="text-sm font-medium leading-normal">{{ c.name }}</p>
             </a>
             {% endfor %}
         </div>
 
-        <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
             {% for product in products %}
                 {% include "catalog/product/_card.html" %}
             {% empty %}
@@ -44,88 +44,29 @@
             {% endfor %}
         </div>
 
-        {% if products.has_next %}
+        {% if products.has_other_pages %}
         <div class="flex justify-center mt-6">
-            <button id="load-more" class="relative inline-flex items-center px-4 py-2 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50" data-next-page="{{ products.next_page_number }}" data-query="{{ query|default:'' }}">Ver mais produtos</button>
+            <nav class="inline-flex rounded-md shadow-sm" aria-label="Paginação">
+                {% if products.has_previous %}
+                    <a href="?q={{ query }}&page={{ products.previous_page_number }}" class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Anterior</a>
+                {% else %}
+                    <span class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-200 bg-gray-100 text-sm font-medium text-gray-400 cursor-not-allowed">Anterior</span>
+                {% endif %}
+                {% for num in products.paginator.page_range %}
+                    {% if products.number == num %}
+                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-[#101518] text-white text-sm font-bold">{{ num }}</span>
+                    {% else %}
+                        <a href="?q={{ query }}&page={{ num }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">{{ num }}</a>
+                    {% endif %}
+                {% endfor %}
+                {% if products.has_next %}
+                    <a href="?q={{ query }}&page={{ products.next_page_number }}" class="relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Próxima</a>
+                {% else %}
+                    <span class="relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-200 bg-gray-100 text-sm font-medium text-gray-400 cursor-not-allowed">Próxima</span>
+                {% endif %}
+            </nav>
         </div>
         {% endif %}
     </div>
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const loadMoreButton = document.getElementById('load-more');
-    const productList = document.getElementById('product-list');
-    let isFetching = false; // Previne múltiplas requisições simultâneas
-
-    if (loadMoreButton) {
-        loadMoreButton.addEventListener('click', function() {
-            if (isFetching) return; // Impede cliques duplicados
-            isFetching = true;
-
-            const nextPage = loadMoreButton.getAttribute('data-next-page');
-            const query = loadMoreButton.getAttribute('data-query');
-            const url = `?page=${nextPage}&q=${encodeURIComponent(query)}`;
-
-            // Desativa o botão
-            loadMoreButton.disabled = true;
-            loadMoreButton.textContent = 'Carregando...';
-
-            // Log para depuração: IDs dos produtos já exibidos
-            const existingProducts = Array.from(productList.querySelectorAll('.text-base.font-medium')).map(el => el.textContent);
-            console.log(`Produtos já exibidos antes da página ${nextPage}:`, existingProducts);
-
-            fetch(url, {
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest'
-                }
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Erro na requisição AJAX: ' + response.statusText);
-                }
-                return response.json();
-            })
-            .then(data => {
-                // Log para depuração: extrair nomes dos produtos do HTML retornado
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(data.html, 'text/html');
-                const productNames = Array.from(doc.querySelectorAll('.text-base.font-medium')).map(el => el.textContent);
-                console.log(`Produtos carregados na página ${nextPage}:`, productNames);
-
-                // Verifica duplicatas
-                const duplicates = productNames.filter(name => existingProducts.includes(name));
-                if (duplicates.length > 0) {
-                    console.warn(`Produtos duplicados detectados na página ${nextPage}:`, duplicates);
-                }
-
-                // Remove mensagem de "Nenhum produto encontrado"
-                const noProductsMessage = productList.querySelector('.col-span-full');
-                if (noProductsMessage) {
-                    noProductsMessage.remove();
-                }
-
-                // Adiciona os novos produtos ao grid
-                productList.insertAdjacentHTML('beforeend', data.html);
-
-                // Atualiza o botão
-                if (data.has_next) {
-                    loadMoreButton.setAttribute('data-next-page', data.next_page);
-                    loadMoreButton.disabled = false;
-                    loadMoreButton.textContent = 'Ver mais produtos';
-                } else {
-                    loadMoreButton.remove();
-                }
-                isFetching = false;
-            })
-            .catch(error => {
-                console.error('Erro ao carregar produtos:', error);
-                loadMoreButton.disabled = false;
-                loadMoreButton.textContent = 'Ver mais produtos';
-                isFetching = false;
-            });
-        });
-    }
-});
-</script>
-{% endblock %}
+{% endblock %} 
