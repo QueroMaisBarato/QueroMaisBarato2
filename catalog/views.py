@@ -34,7 +34,6 @@ def home(request, category_slug=None):
     print(f"Produtos na página {page}: IDs={product_ids}, Names={product_names}")
 
     if request.headers.get('x-requested-with') == 'XMLHttpRequest':
-        # Renderização manual para teste
         html = ""
         for product in products_page:
             html += f'<div class="product-card" data-product-id="{product.id}">Produto: {product.name} (ID: {product.id})</div>'
@@ -45,12 +44,14 @@ def home(request, category_slug=None):
             'next_page': page + 1 if offset + 12 < total_products else None
         })
 
-    return render(request,
-                 'catalog/home.html',
-                 {'category': category,
-                  'categories': categories,
-                  'products': products_page,
-                  'query': query})
+    context = {
+        'category': category,
+        'categories': categories,
+        'products': products_page,
+        'query': query,
+        'products_has_next': offset + 12 < total_products,
+    }
+    return render(request, 'catalog/home.html', context)
 
 def product_detail(request, id, slug):
     product = get_object_or_404(Product,

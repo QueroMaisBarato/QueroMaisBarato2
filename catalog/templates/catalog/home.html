@@ -9,10 +9,12 @@
         {% include "catalog/product/_card.html" %}
     </div>
 
-    {% if products.has_next %}
-    <div>
-        <button id="load-more" data-next-page="{{ products.next_page_number }}" data-query="{{ query|default:'' }}">Ver mais produtos</button>
+    {% if products_has_next %}
+    <div class="flex justify-center mt-6">
+        <button id="load-more" class="px-4 py-2 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50" data-next-page="{{ products.next_page_number }}" data-query="{{ query|default:'' }}">Ver mais produtos</button>
     </div>
+    {% else %}
+    <p class="text-center mt-6">Não há mais produtos para carregar.</p>
     {% endif %}
 </div>
 
@@ -21,20 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const loadMoreButton = document.getElementById('load-more');
     const productList = document.getElementById('product-list');
     let isFetching = false;
-    let lastPageLoaded = 1; // Rastreia a última página carregada
 
     if (loadMoreButton) {
         loadMoreButton.addEventListener('click', function() {
             if (isFetching) return;
             isFetching = true;
 
-            const nextPage = parseInt(loadMoreButton.getAttribute('data-next-page'));
-            if (nextPage <= lastPageLoaded) {
-                console.warn(`Página ${nextPage} já carregada. Ignorando.`);
-                isFetching = false;
-                return;
-            }
-
+            const nextPage = loadMoreButton.getAttribute('data-next-page');
             const query = loadMoreButton.getAttribute('data-query');
             const url = `?page=${nextPage}&q=${encodeURIComponent(query)}`;
 
@@ -56,15 +51,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 const productIds = Array.from(doc.querySelectorAll('.product-card')).map(el => el.getAttribute('data-product-id'));
                 console.log(`Página ${nextPage}: ${productIds.length} produtos retornados`, productIds);
 
-                // Limpa o DOM para teste (remover após confirmar)
-                // productList.innerHTML = '';
-
                 productList.insertAdjacentHTML('beforeend', data.html);
 
                 const newProducts = Array.from(productList.querySelectorAll('.product-card')).map(el => el.getAttribute('data-product-id'));
                 console.log(`Após página ${nextPage}: ${newProducts.length} produtos no DOM`, newProducts);
-
-                lastPageLoaded = nextPage;
 
                 if (data.has_next) {
                     loadMoreButton.setAttribute('data-next-page', data.next_page);
