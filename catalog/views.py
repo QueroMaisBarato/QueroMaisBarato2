@@ -14,7 +14,9 @@ def product_list(request, category_slug=None):
     
     if query:
         products = products.filter(
-            Q(name__icontains=query) | Q(description__icontains=query)
+            Q(name__icontains=query) |
+            Q(description__icontains=query) |
+            Q(loja__icontains=query)
         )
     
     if category_slug:
@@ -54,7 +56,9 @@ def home(request, category_slug=None):
     
     if query:
         products = products.filter(
-            Q(name__icontains=query) | Q(description__icontains=query)
+            Q(name__icontains=query) |
+            Q(description__icontains=query) |
+            Q(loja__icontains=query)
         )
     
     if category_slug:

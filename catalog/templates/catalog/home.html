@@ -6,28 +6,32 @@
 {% block content %}
 <div class="flex flex-col gap-8">
     <!-- Banner Principal -->
-    <div class="w-full rounded-xl h-[300px] relative overflow-hidden mb-8 flex items-center" style="background: linear-gradient(90deg, #e53935 0%, #ffb300 30%, #8e24aa 65%, #1e88e5 100%);">
-        <div class="flex-1 flex justify-center items-center h-full">
-            <img src="{% static 'images/banner-3.png' %}" alt="E-commerce" class="h-full w-auto object-contain">
+    <div class="w-full rounded-xl h-[350px] relative overflow-hidden mb-8 flex flex-col md:flex-row items-center gap-6 md:gap-4 bg-orange-400 pt-8 pb-8 md:pt-0 md:pb-0">
+        <div class="hidden md:flex flex-1 justify-center items-end h-full">
+            <img src="{% static 'images/banner-3.png' %}" alt="E-commerce" class="h-full w-auto object-contain object-bottom m-0 p-0 self-end">
         </div>
-        <div class="flex-1 flex flex-col justify-center items-start h-full px-8 gap-2">
-            <h1 class="text-4xl md:text-5xl font-bold text-[#fff] leading-tight drop-shadow-md">Quer economizar de verdade?</h1>
-            <p class="text-xl text-[#fff] drop-shadow-md">Um especialista te mostra o caminho!</p>
-            <a href="#produtos" class="flex h-12 items-center justify-center rounded-xl bg-white text-[#101518] text-base font-bold leading-normal px-8 hover:bg-gray-100 transition-colors">
-                Acesse agora!
+        <div class="flex-1 flex flex-col justify-center items-center md:items-start h-full px-8 gap-6 md:gap-4">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-[#fff] leading-tight drop-shadow-md">Quer economizar de verdade?</h1>
+                <h3 class="text-2xl md:text-3xl font-bold text-[#fff] leading-tight drop-shadow-md">Aqui te mostramos o melhor preço!</h3>
+    
+            </div>
+            <a href="#produtos" class="flex h-14 items-center justify-center rounded-xl bg-white text-[#101518] text-lg font-bold leading-normal px-12 hover:bg-gray-100 transition-colors">
+                Ver ofertas
             </a>
+            <div class="w-full flex flex-col items-center md:items-start">
+                <div class="w-full flex justify-center md:justify-start mb-2">
+                    <span class="text-sm text-white font-medium">Nossos Parceiros</span>
+                </div>
+                <div class="w-full max-w-[400px]">
+                    <img src="{% static 'images/parceiros.png' %}" alt="Logos dos Parceiros" class="w-full h-auto object-contain">
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Logos dos Parceiros -->
-    <div class="w-full flex flex-col gap-4">
-        <div class="w-full flex justify-center mb-2">
-            <span class="text-sm text-[#5c748a] font-medium">Nossos Parceiros</span>
-        </div>
-        <div class="w-full px-4">
-            <img src="{% static 'images/logos.png' %}" alt="Logos dos Parceiros" class="w-full h-auto object-contain">
-        </div>
-    </div>
+
 
     <!-- Busca e Categorias -->
     <div id="produtos" class="w-full scroll-mt-24">
@@ -39,7 +43,7 @@
                             <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
                         </svg>
                     </div>
-                    <input name="q" value="{{ query|default:'' }}" placeholder="Buscar produtos" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#101518] focus:outline-0 focus:ring-0 border-none bg-[#eaedf1] focus:border-none h-full placeholder:text-[#5c748a] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" />
+                    <input name="q" value="{{ query|default:'' }}" placeholder="Buscar por produto ou loja" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#101518] focus:outline-0 focus:ring-0 border-none bg-[#eaedf1] focus:border-none h-full placeholder:text-[#5c748a] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" />
                 </div>
             </label>
         </form>
@@ -56,7 +60,7 @@
         </div>
 
         <!-- Grid de Produtos -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
             {% for product in products %}
                 {% include "catalog/product/_card.html" %}
             {% empty %}

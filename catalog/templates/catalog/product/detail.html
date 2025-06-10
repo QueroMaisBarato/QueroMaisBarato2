@@ -24,8 +24,8 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-8 p-4">
-        <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-xl" style="background-image: url('{{ product.image.url }}'); background-size: contain;"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
+        <div class="w-full bg-center bg-no-repeat aspect-square bg-contain rounded-xl md:max-w-[500px] mx-auto" style="background-image: url('{{ product.image_url }}'); background-size: contain;"></div>
         <div class="flex flex-col gap-6">
             {% if product.external_url %}
             <a href="{{ product.external_url }}" target="_blank" rel="noopener noreferrer" class="flex h-12 w-full items-center justify-center rounded-xl bg-[#101518] text-white text-base font-bold leading-normal">
