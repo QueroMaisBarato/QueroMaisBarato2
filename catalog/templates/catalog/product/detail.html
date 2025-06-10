@@ -20,6 +20,16 @@
                         <p class="text-sm font-medium leading-normal">Em falta</p>
                     </span>
                 {% endif %}
+                {% if product.pix %}
+                <span class="flex h-8 items-center justify-center gap-x-2 rounded-xl bg-green-100 text-green-800 px-4">
+                    <p class="text-sm font-medium leading-normal">Pix</p>
+                </span>
+                {% endif %}
+                {% if product.parcelado %}
+                <span class="flex h-8 items-center justify-center gap-x-2 rounded-xl bg-green-100 text-green-800 px-4">
+                    <p class="text-sm font-medium leading-normal">Parcelado</p>
+                </span>
+                {% endif %}
             </div>
         </div>
     </div>

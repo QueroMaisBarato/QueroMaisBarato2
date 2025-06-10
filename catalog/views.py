@@ -3,8 +3,22 @@ from django.http import JsonResponse
 from .models import Category, Product, Promotion
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
+from django.contrib import messages
+from .models import Category 
 
 # Create your views here.
+def add_category(request):
+    if request.method == 'POST':
+        # Process the form data
+        name = request.POST.get('name')
+        slug = request.POST.get('slug')
+        
+        # Create and save the new category
+        Category.objects.create(name=name, slug=slug)
+        messages.success(request, 'Category added successfully!')
+        return redirect('dashboard:some_view')  # Redirect to an appropriate view
+        
+    return render(request, 'dashboard/add_category.html')
 
 def product_list(request, category_slug=None):
     category = None

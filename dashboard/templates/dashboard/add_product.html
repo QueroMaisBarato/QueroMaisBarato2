@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Produto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f5f5; }
+        .form-box { max-width: 500px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 32px; }
+        h2 { text-align: center; margin-bottom: 24px; }
+        form { display: flex; flex-direction: column; gap: 16px; }
+        label { font-weight: bold; margin-bottom: 4px; display: block; }
+        input, select, textarea { padding: 10px; border-radius: 4px; border: 1px solid #ddd; width: 100%; box-sizing: border-box; }
+        textarea { min-height: 100px; }
+        .checkbox-label { display: flex; align-items: center; gap: 8px; }
+        .checkbox-label input { width: auto; }
+        button { background: #101518; color: #fff; font-weight: bold; border: none; border-radius: 4px; padding: 12px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #222; }
+        a { display: block; margin-top: 24px; text-align: center; color: #101518; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .field-helptext { font-size: 12px; color: #666; margin-top: 4px; }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Cadastrar Produto</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <div>
+                <label for="id_category">Categoria:</label>
+                {{ form.category }}
+            </div>
+            
+            <div>
+                <label for="id_name">Nome:</label>
+                {{ form.name }}
+            </div>
+            
+            
+            <div>
+                <label for="id_image_url">URL da Imagem:</label>
+                {{ form.image_url }}
+                <p class="field-helptext">Link direto da imagem do produto (ex: Cloudinary, Imgur, etc)</p>
+            </div>
+            
+            <div>
+                <label for="id_description">Descrição:</label>
+                {{ form.description }}
+            </div>
+            
+            <div>
+                <label for="id_price">Preço:</label>
+                {{ form.price }}
+            </div>
+            
+            <div>
+                <label for="id_external_url">URL Externa:</label>
+                {{ form.external_url }}
+                <p class="field-helptext">Link para a plataforma de venda</p>
+            </div>
+            
+            <div>
+                <label for="id_codigo_produto">Código do Produto:</label>
+                {{ form.codigo_produto }}
+            </div>
+            
+            <div>
+                <label for="id_loja">Loja:</label>
+                {{ form.loja }}
+            </div>
+            
+            <div class="checkbox-label">
+                {{ form.pix }}
+                <label for="id_pix">Aceita Pix</label>
+            </div>
+            
+            <div class="checkbox-label">
+                {{ form.parcelado }}
+                <label for="id_parcelado">Parcelado</label>
+            </div>
+            
+            <div class="checkbox-label">
+                {{ form.available }}
+                <label for="id_available">Disponível</label>
+            </div>
+            
+            <button type="submit">Salvar</button>
+        </form>
+        <a href="{% url 'dashboard:home' %}">Voltar</a>
+    </div>
+    
+    <script>
+        // Auto-generate slug from name if slug is empty
+        document.getElementById('id_name').addEventListener('input', function() {
+            const slugField = document.getElementById('id_slug');
+            if (!slugField.value) {
+                slugField.value = this.value.toLowerCase()
+                    .replace(/[^\w\s-]/g, '') // Remove special chars
+                    .replace(/[\s]+/g, '-')   // Replace spaces with -
+                    .replace(/^-+|-+$/g, ''); // Trim - from start/end
+            }
+        });
+    </script>
+</body>
+</html>

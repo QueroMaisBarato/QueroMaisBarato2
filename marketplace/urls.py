@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('dashboard/', include('dashboard.urls', namespace='dashboard')),  # <-- Coloque o dashboard ANTES do catálogo
     path('', include('catalog.urls', namespace='catalog')),
 ]
 

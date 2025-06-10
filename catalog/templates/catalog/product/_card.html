@@ -8,6 +8,14 @@
         <p class="text-[#101518] text-base font-medium leading-normal">{{ product.name }}</p>
         <p class="text-[#5c748a] text-sm font-normal leading-normal">{{ product.description|truncatechars:60 }}</p>
         <p class="text-[#101518] text-lg font-bold leading-normal mt-1">R$ {{ product.price }}</p>
+        <div class="flex gap-2 mt-1">
+            {% if product.pix %}
+            <span class="flex h-6 items-center justify-center gap-x-2 rounded-xl bg-green-100 text-green-800 px-2 text-xs font-medium">Pix</span>
+            {% endif %}
+            {% if product.parcelado %}
+            <span class="flex h-6 items-center justify-center gap-x-2 rounded-xl bg-green-100 text-green-800 px-2 text-xs font-medium">Parcelado</span>
+            {% endif %}
+        </div>
     </div>
     {% if product.external_url %}
         <a href="{{ product.external_url }}" target="_blank" rel="noopener noreferrer" class="flex h-10 items-center justify-center rounded-xl bg-[#101518] text-white text-sm font-bold leading-normal mt-2 w-full">

@@ -38,6 +38,8 @@ class Product(models.Model):
     updated = models.DateTimeField(auto_now=True)
     codigo_produto = models.CharField("Código do Produto", max_length=100, blank=True, null=True)
     loja = models.CharField("Loja", max_length=100, blank=True, null=True)
+    pix = models.BooleanField("Aceita Pix", default=False, help_text="Marque se o produto pode ser pago via Pix")
+    parcelado = models.BooleanField("Parcelado", default=False, help_text="Marque se o produto pode ser parcelado")
     
     class Meta:
         ordering = ('name',)
