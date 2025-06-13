@@ -1,29 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Cadastrar Categoria</title>
-    <meta charset="utf-8">
-    <style>
-        body { font-family: Arial, sans-serif; background: #f5f5f5; }
-        .form-box { max-width: 400px; margin: 40px auto; background: #fff; padding: 32px; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
-        h2 { text-align: center; margin-bottom: 24px; }
-        form { display: flex; flex-direction: column; gap: 16px; }
-        label { font-weight: bold; }
-        input { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
-        button { background: #101518; color: #fff; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 4px; }
-        button:hover { background: #222; }
-        a { display: block; margin-top: 24px; text-align: center; color: #101518; text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="form-box">
-        <h2>Cadastrar Categoria</h2>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Salvar</button>
-        </form>
-        <a href="{% url 'dashboard:home' %}">Voltar</a>
+{% extends 'dashboard/base.html' %}
+
+{% block title %}Adicionar Categoria - Dashboard{% endblock %}
+
+{% block content %}
+<div class="space-y-6">
+    <!-- Header -->
+    <div>
+        <h1 class="text-2xl font-bold text-gray-800">Adicionar Categoraushuahsuhaia</h1>
     </div>
-</body>
-</html>
+
+    <!-- Form Card -->
+    <div class="bg-white rounded-lg shadow-sm">
+        <div class="px-6 py-4 border-b border-gray-200">
+            <h2 class="text-lg font-medium text-gray-800">Informações da Categoria</h2>
+        </div>
+        <div class="p-6">
+            <form method="post" class="space-y-6">
+                {% csrf_token %}
+                
+                <div>
+                    <label for="id_name" class="block text-sm font-medium text-gray-700">Nome</label>
+                    <div class="mt-1">
+                        {{ form.name|add_class:"block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" }}
+                    </div>
+                    {% if form.name.errors %}
+                    <p class="mt-2 text-sm text-red-600">{{ form.name.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <div>
+                    <label for="id_slug" class="block text-sm font-medium text-gray-700">Slug</label>
+                    <div class="mt-1">
+                        {{ form.slug|add_class:"block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" }}
+                    </div>
+                    {% if form.slug.errors %}
+                    <p class="mt-2 text-sm text-red-600">{{ form.slug.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <div>
+                    <label for="id_order" class="block text-sm font-medium text-gray-700">Ordem</label>
+                    <div class="mt-1">
+                        {{ form.order|add_class:"block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" }}
+                    </div>
+                    {% if form.order.errors %}
+                    <p class="mt-2 text-sm text-red-600">{{ form.order.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <div class="flex items-center justify-end space-x-4">
+                    <a href="{% url 'dashboard:category_list' %}" class="inline-flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <i class="fas fa-times mr-2"></i>
+                        Cancelar
+                    </a>
+                    <button type="submit" class="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <i class="fas fa-save mr-2"></i>
+                        Salvar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

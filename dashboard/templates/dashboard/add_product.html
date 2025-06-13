@@ -1,106 +1,150 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Cadastrar Produto</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { font-family: Arial, sans-serif; background: #f5f5f5; }
-        .form-box { max-width: 500px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 32px; }
-        h2 { text-align: center; margin-bottom: 24px; }
-        form { display: flex; flex-direction: column; gap: 16px; }
-        label { font-weight: bold; margin-bottom: 4px; display: block; }
-        input, select, textarea { padding: 10px; border-radius: 4px; border: 1px solid #ddd; width: 100%; box-sizing: border-box; }
-        textarea { min-height: 100px; }
-        .checkbox-label { display: flex; align-items: center; gap: 8px; }
-        .checkbox-label input { width: auto; }
-        button { background: #101518; color: #fff; font-weight: bold; border: none; border-radius: 4px; padding: 12px; cursor: pointer; font-size: 16px; }
-        button:hover { background: #222; }
-        a { display: block; margin-top: 24px; text-align: center; color: #101518; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .field-helptext { font-size: 12px; color: #666; margin-top: 4px; }
-    </style>
-</head>
-<body>
-    <div class="form-box">
-        <h2>Cadastrar Produto</h2>
-        <form method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-            
-            <div>
-                <label for="id_category">Categoria:</label>
-                {{ form.category }}
-            </div>
-            
-            <div>
-                <label for="id_name">Nome:</label>
-                {{ form.name }}
-            </div>
-            
-            
-            <div>
-                <label for="id_image_url">URL da Imagem:</label>
-                {{ form.image_url }}
-                <p class="field-helptext">Link direto da imagem do produto (ex: Cloudinary, Imgur, etc)</p>
-            </div>
-            
-            <div>
-                <label for="id_description">Descrição:</label>
-                {{ form.description }}
-            </div>
-            
-            <div>
-                <label for="id_price">Preço:</label>
-                {{ form.price }}
-            </div>
-            
-            <div>
-                <label for="id_external_url">URL Externa:</label>
-                {{ form.external_url }}
-                <p class="field-helptext">Link para a plataforma de venda</p>
-            </div>
-            
-            <div>
-                <label for="id_codigo_produto">Código do Produto:</label>
-                {{ form.codigo_produto }}
-            </div>
-            
-            <div>
-                <label for="id_loja">Loja:</label>
-                {{ form.loja }}
-            </div>
-            
-            <div class="checkbox-label">
-                {{ form.pix }}
-                <label for="id_pix">Aceita Pix</label>
-            </div>
-            
-            <div class="checkbox-label">
-                {{ form.parcelado }}
-                <label for="id_parcelado">Parcelado</label>
-            </div>
-            
-            <div class="checkbox-label">
-                {{ form.available }}
-                <label for="id_available">Disponível</label>
-            </div>
-            
-            <button type="submit">Salvar</button>
-        </form>
-        <a href="{% url 'dashboard:home' %}">Voltar</a>
+{% extends 'dashboard/base.html' %}
+
+{% block title %}Adicionar Produto - Dashboard{% endblock %}
+
+{% block content %}
+<div class="space-y-6">
+    <!-- Header -->
+    <div>
+        <h1 class="text-2xl font-bold text-gray-800">Adicionar Produto</h1>
     </div>
-    
-    <script>
-        // Auto-generate slug from name if slug is empty
-        document.getElementById('id_name').addEventListener('input', function() {
-            const slugField = document.getElementById('id_slug');
-            if (!slugField.value) {
-                slugField.value = this.value.toLowerCase()
-                    .replace(/[^\w\s-]/g, '') // Remove special chars
-                    .replace(/[\s]+/g, '-')   // Replace spaces with -
-                    .replace(/^-+|-+$/g, ''); // Trim - from start/end
-            }
-        });
-    </script>
-</body>
-</html>
+
+    <!-- Form Card -->
+    <div class="bg-white rounded-lg shadow-sm">
+        <div class="px-6 py-4 border-b border-gray-200">
+            <h2 class="text-lg font-medium text-gray-800">Informações do Produto</h2>
+        </div>
+        <div class="p-6">
+            <form method="post" enctype="multipart/form-data" class="space-y-6">
+                {% csrf_token %}
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="id_category" class="block text-sm font-medium text-gray-700">Categoria</label>
+                        <div class="mt-1">
+                            {{ form.category }}
+                        </div>
+                        {% if form.category.errors %}
+                        <p class="mt-2 text-sm text-red-600">{{ form.category.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <label for="id_name" class="block text-sm font-medium text-gray-700">Nome</label>
+                        <div class="mt-1">
+                            {{ form.name }}
+                        </div>
+                        {% if form.name.errors %}
+                        <p class="mt-2 text-sm text-red-600">{{ form.name.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <label for="id_image_url" class="block text-sm font-medium text-gray-700">URL da Imagem</label>
+                        <div class="mt-1">
+                            {{ form.image_url }}
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500">Link direto da imagem do produto (ex: Cloudinary, Imgur, etc)</p>
+                        {% if form.image_url.errors %}
+                        <p class="mt-2 text-sm text-red-600">{{ form.image_url.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <label for="id_price" class="block text-sm font-medium text-gray-700">Preço</label>
+                        <div class="mt-1">
+                            {{ form.price }}
+                        </div>
+                        {% if form.price.errors %}
+                        <p class="mt-2 text-sm text-red-600">{{ form.price.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <label for="id_external_url" class="block text-sm font-medium text-gray-700">URL Externa</label>
+                        <div class="mt-1">
+                            {{ form.external_url }}
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500">Link para a plataforma de venda</p>
+                        {% if form.external_url.errors %}
+                        <p class="mt-2 text-sm text-red-600">{{ form.external_url.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <label for="id_codigo_produto" class="block text-sm font-medium text-gray-700">Código do Produto</label>
+                        <div class="mt-1">
+                            {{ form.codigo_produto }}
+                        </div>
+                        {% if form.codigo_produto.errors %}
+                        <p class="mt-2 text-sm text-red-600">{{ form.codigo_produto.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <label for="id_loja" class="block text-sm font-medium text-gray-700">Loja</label>
+                        <div class="mt-1">
+                            {{ form.loja }}
+                        </div>
+                        {% if form.loja.errors %}
+                        <p class="mt-2 text-sm text-red-600">{{ form.loja.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div>
+                    <label for="id_description" class="block text-sm font-medium text-gray-700">Descrição</label>
+                    <div class="mt-1">
+                        {{ form.description }}
+                    </div>
+                    {% if form.description.errors %}
+                    <p class="mt-2 text-sm text-red-600">{{ form.description.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="flex items-center">
+                        {{ form.pix }}
+                        <label for="id_pix" class="ml-2 block text-sm text-gray-900">Aceita Pix</label>
+                    </div>
+
+                    <div class="flex items-center">
+                        {{ form.parcelado }}
+                        <label for="id_parcelado" class="ml-2 block text-sm text-gray-900">Parcelado</label>
+                    </div>
+
+                    <div class="flex items-center">
+                        {{ form.available }}
+                        <label for="id_available" class="ml-2 block text-sm text-gray-900">Disponível</label>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between space-x-4">
+                    <button type="submit" class="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <i class="fas fa-save mr-2"></i>
+                        Salvar
+                    </button>
+                    <a href="{% url 'dashboard:product_list' %}" class="inline-flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <i class="fas fa-times mr-2"></i>
+                        Cancelar
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Auto-generate slug from name if slug is empty
+    document.getElementById('id_name').addEventListener('input', function() {
+        const slugField = document.getElementById('id_slug');
+        if (!slugField.value) {
+            slugField.value = this.value.toLowerCase()
+                .replace(/[^\w\s-]/g, '') // Remove special chars
+                .replace(/[\s]+/g, '-')   // Replace spaces with -
+                .replace(/^-+|-+$/g, ''); // Trim - from start/end
+        }
+    });
+</script>
+{% endblock %}
