@@ -78,13 +78,32 @@
                 {% else %}
                     <span class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-200 bg-gray-100 text-sm font-medium text-gray-400 cursor-not-allowed">Anterior</span>
                 {% endif %}
-                {% for num in products.paginator.page_range %}
+                
+                <!-- Primeira página -->
+                {% if page_range.0 > 1 %}
+                    <a href="?q={{ query }}&page=1#produtos" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">1</a>
+                    {% if page_range.0 > 2 %}
+                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500">...</span>
+                    {% endif %}
+                {% endif %}
+                
+                <!-- Páginas do range -->
+                {% for num in page_range %}
                     {% if products.number == num %}
                         <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-[#101518] text-white text-sm font-bold">{{ num }}</span>
                     {% else %}
                         <a href="?q={{ query }}&page={{ num }}#produtos" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">{{ num }}</a>
                     {% endif %}
                 {% endfor %}
+                
+                <!-- Última página -->
+                {% if page_range|last < products.paginator.num_pages %}
+                    {% if page_range|last < products.paginator.num_pages|add:"-1" %}
+                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500">...</span>
+                    {% endif %}
+                    <a href="?q={{ query }}&page={{ products.paginator.num_pages }}#produtos" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">{{ products.paginator.num_pages }}</a>
+                {% endif %}
+                
                 {% if products.has_next %}
                     <a href="?q={{ query }}&page={{ products.next_page_number }}#produtos" class="relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Próxima</a>
                 {% else %}

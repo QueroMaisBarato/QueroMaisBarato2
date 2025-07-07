@@ -7,18 +7,32 @@ from django.contrib import messages
 from .models import Category 
 
 # Create your views here.
-def add_category(request):
-    if request.method == 'POST':
-        # Process the form data
-        name = request.POST.get('name')
-        slug = request.POST.get('slug')
-        
-        # Create and save the new category
-        Category.objects.create(name=name, slug=slug)
-        messages.success(request, 'Category added successfully!')
-        return redirect('dashboard:some_view')  # Redirect to an appropriate view
-        
-    return render(request, 'dashboard/add_category.html')
+
+def get_page_range(page_obj, max_pages=3):
+    """
+    Retorna um range de páginas para mostrar na paginação.
+    Mostra no máximo max_pages páginas ao redor da página atual.
+    """
+    current_page = page_obj.number
+    total_pages = page_obj.paginator.num_pages
+    
+    if total_pages <= max_pages:
+        # Se temos poucas páginas, mostra todas
+        return range(1, total_pages + 1)
+    
+    # Calcula o range de páginas para mostrar
+    half_pages = max_pages // 2
+    
+    start_page = max(1, current_page - half_pages)
+    end_page = min(total_pages, current_page + half_pages)
+    
+    # Ajusta o range se estamos nas bordas
+    if start_page == 1:
+        end_page = min(total_pages, start_page + max_pages - 1)
+    elif end_page == total_pages:
+        start_page = max(1, end_page - max_pages + 1)
+    
+    return range(start_page, end_page + 1)
 
 def product_list(request, category_slug=None):
     category = None
@@ -46,12 +60,16 @@ def product_list(request, category_slug=None):
     except EmptyPage:
         products = paginator.page(paginator.num_pages)
 
+    # Adiciona o range de páginas ao contexto
+    page_range = get_page_range(products)
+
     return render(request,
                  'catalog/product/list.html',
                  {'category': category,
                   'categories': categories,
                   'products': products,
-                  'query': query})
+                  'query': query,
+                  'page_range': page_range})
 
 def product_detail(request, id, slug):
     product = get_object_or_404(Product,
@@ -88,9 +106,13 @@ def home(request, category_slug=None):
     except EmptyPage:
         products = paginator.page(paginator.num_pages)
 
+    # Adiciona o range de páginas ao contexto
+    page_range = get_page_range(products)
+
     return render(request,
                  'catalog/home.html',
                  {'category': category,
                   'categories': categories,
                   'products': products,
-                  'query': query})
+                  'query': query,
+                  'page_range': page_range})
