@@ -6,29 +6,24 @@
 {% block content %}
 <div class="flex flex-col gap-8">
     <!-- Banner Principal -->
-    <div class="w-full rounded-xl h-[350px] relative overflow-hidden mb-8 flex flex-col md:flex-row items-center gap-6 md:gap-4 bg-orange-400 pt-8 pb-8 md:pt-0 md:pb-0">
-        <div class="hidden md:flex flex-1 justify-center items-end h-full">
-            <img src="{% static 'images/banner-3.png' %}" alt="E-commerce" class="h-full w-auto object-contain object-bottom m-0 p-0 self-end">
-        </div>
-        <div class="flex-1 flex flex-col justify-center items-center md:items-start h-full px-8 gap-6 md:gap-4">
-            <div class="text-center md:text-left">
-                <h1 class="text-4xl md:text-5xl font-bold text-[#fff] leading-tight drop-shadow-md">Quer economizar de verdade?</h1>
-                <h3 class="text-2xl md:text-3xl font-bold text-[#fff] leading-tight drop-shadow-md">Aqui te mostramos o melhor preço!</h3>
+    <div class="w-full max-w-[1438px] mx-auto aspect-[1438/659] rounded-xl relative overflow-hidden mb-8 flex flex-col md:flex-row items-center gap-6 md:gap-4 bg-cover bg-center pt-8 pb-8 md:pt-0 md:pb-0" style="background-image: url('{% static 'images/banner5.webp' %}')">
+    <div class="hidden md:flex flex-1 justify-center items-end h-full">
+        
+    </div>
+    <div class="flex-1 flex flex-col justify-center items-center md:items-start h-full px-8 gap-6 md:gap-4">
+        <div class="text-center md:text-left">
+   
     
+        </div>
+        
+        <div class="w-full flex flex-col items-center md:items-start">
+            <div class="w-full flex justify-center md:justify-start mb-2">
+               
             </div>
-            <a href="#produtos" class="flex h-14 items-center justify-center rounded-xl bg-white text-[#101518] text-lg font-bold leading-normal px-12 hover:bg-gray-100 transition-colors">
-                Ver ofertas
-            </a>
-            <div class="w-full flex flex-col items-center md:items-start">
-                <div class="w-full flex justify-center md:justify-start mb-2">
-                    <span class="text-sm text-white font-medium">Nossos Parceiros</span>
-                </div>
-                <div class="w-full max-w-[400px]">
-                    <img src="{% static 'images/parceiros.png' %}" alt="Logos dos Parceiros" class="w-full h-auto object-contain">
-                </div>
-            </div>
+            
         </div>
     </div>
+</div>
 
     <!-- Logos dos Parceiros -->
 
