@@ -34,32 +34,45 @@
 <body>
     <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden">
         <div class="layout-container flex h-full grow flex-col">
+
+            <!--
             <header class="flex items-center justify-center whitespace-nowrap border-b border-solid border-b-[#eaedf1] ">
                 <a href="/" class="flex flex-col items-center gap-2 text-[#101518] no-underline">
                     <div class="size-36">
-                        
+                        <img src="{% static 'images/logo2.png' %}" alt="Logo Busque Mais Barato" class="w-full h-full object-contain">
                     </div>
                 </a>
             </header>
+            -->
 
-            <div class="px-8 flex flex-1 justify-center py-5">
+            <!-- CONTEÚDO -->
+            <div class="px-3 sm:px-6 md:px-8 flex flex-1 justify-center py-4 sm:py-5 md:py-6">
                 <div class="layout-content-container flex flex-col max-w-7xl w-full flex-1">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
 
-        <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-                        <div class="w-full max-w-[1422px] mx-auto aspect-[1438/513] rounded-xl relative overflow-hidden mb-8 flex flex-col md:flex-row items-center gap-6 md:gap-4 bg-cover bg-center pt-8 pb-8 md:pt-0 md:pb-0" style="background-image: url('{% static 'images/banner6.webp' %}')">
-    <div class="hidden md:flex flex-1 justify-center items-end h-full">
-                        <div>
-                        <p class="text-[#5c748a] text-base font-normal leading-normal">@2025 BusqueMaisBarato. Todos os direitos reservados.</p>
-                        </div>
-                    </footer>
+            <!-- FOOTER -->
+            <footer class="flex flex-col gap-4 px-3 py-6 sm:gap-6 sm:px-5 sm:py-8 text-center @container">
+                <div
+  class="w-full max-w-[1422px] mx-auto rounded-xl relative overflow-hidden mb-6 sm:mb-8
+         flex flex-col md:flex-row items-center gap-4 md:gap-6 bg-cover bg-center
+         min-h-[160px] sm:min-h-[200px] md:aspect-[1438/513] pt-6 pb-6 md:pt-0 md:pb-0"
+  style="background-image: url('{% static 'images/banner6.webp' %}')">
+  <div class="hidden md:flex flex-1 justify-center items-end h-full"></div>
+</div>
+
+                <div>
+                    <p class="text-[#5c748a] text-sm sm:text-base font-normal leading-normal">
+                        @2025 BusqueMaisBarato. Todos os direitos reservados.
+                    </p>
                 </div>
             </footer>
+
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
-</html> 
+</html>
