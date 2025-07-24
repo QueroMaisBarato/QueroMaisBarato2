@@ -4,58 +4,74 @@
 {% block title %}Início{% endblock %}
 
 {% block content %}
-<div class="flex flex-col gap-8">
-    <!-- Banner Principal -->
-    <div class="w-full max-w-[1438px] mx-auto aspect-[1438/659] rounded-xl relative overflow-hidden mb-8 flex flex-col md:flex-row items-center gap-6 md:gap-4 bg-cover bg-center pt-8 pb-8 md:pt-0 md:pb-0" style="background-image: url('{% static 'images/banner5.webp' %}')">
-    <div class="hidden md:flex flex-1 justify-center items-end h-full">
-        
-    </div>
-    <div class="flex-1 flex flex-col justify-center items-center md:items-start h-full px-8 gap-6 md:gap-4">
-        <div class="text-center md:text-left">
-   
-    
+<div class="flex flex-col gap-6 sm:gap-8">
+    <!-- Banner Principal (comentado permanece igual) -->
+    <!--<div class="w-full rounded-xl h-[350px] relative overflow-hidden mb-8 flex flex-col md:flex-row items-center gap-6 md:gap-4 bg-orange-400 pt-8 pb-8 md:pt-0 md:pb-0">
+        <div class="hidden md:flex flex-1 justify-center items-end h-full">
+            <img src="{% static 'images/banner-3.png' %}" alt="E-commerce" class="h-full w-auto object-contain object-bottom m-0 p-0 self-end">
         </div>
-        
-        <div class="w-full flex flex-col items-center md:items-start">
-            <div class="w-full flex justify-center md:justify-start mb-2">
-               
+        <div class="flex-1 flex flex-col justify-center items-center md:items-start h-full px-8 gap-6 md:gap-4">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-[#fff] leading-tight drop-shadow-md">Quer economizar de verdade?</h1>
+                <h3 class="text-2xl md:text-3xl font-bold text-[#fff] leading-tight drop-shadow-md">Aqui te mostramos o melhor preço!</h3>
             </div>
-            
+            <a href="#produtos" class="flex h-14 items-center justify-center rounded-xl bg-white text-[#101518] text-lg font-bold leading-normal px-12 hover:bg-gray-100 transition-colors">
+                Ver ofertas
+            </a>
+            <div class="w-full flex flex-col items-center md:items-start">
+                <div class="w-full flex justify-center md:justify-start mb-2">
+                    <span class="text-sm text-white font-medium">Nossos Parceiros</span>
+                </div>
+                <div class="w-full max-w-[400px]">
+                    <img src="{% static 'images/parceiros.png' %}" alt="Logos dos Parceiros" class="w-full h-auto object-contain">
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- Banner ativo -->
+    <div class="w-full max-w-[1438px] mx-auto aspect-[1438/659] rounded-xl relative overflow-hidden mb-6 sm:mb-8 flex flex-col md:flex-row items-center gap-4 md:gap-4 bg-cover bg-center pt-4 pb-4 md:pt-0 md:pb-0"
+         style="background-image: url('{% static 'images/banner5.webp' %}')">
+        <div class="hidden md:flex flex-1 justify-center items-end h-full"></div>
+        <div class="flex-1 flex flex-col justify-center items-center md:items-start h-full px-4 sm:px-6 md:px-8 gap-4 md:gap-4">
+            <div class="text-center md:text-left"></div>
+            <div class="w-full flex flex-col items-center md:items-start">
+                <div class="w-full flex justify-center md:justify-start mb-1 sm:mb-2"></div>
+            </div>
         </div>
     </div>
-</div>
-
-    <!-- Logos dos Parceiros -->
-
 
     <!-- Busca e Categorias -->
     <div id="produtos" class="w-full scroll-mt-24">
-        <form method="get" class="px-4 py-3">
+        <form method="get" class="px-3 py-2 sm:px-4 sm:py-3">
             <label class="flex flex-col min-w-40 h-12 w-full">
                 <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
-                    <div class="text-[#5c748a] flex border-none bg-[#eaedf1] items-center justify-center pl-4 rounded-l-xl border-r-0">
+                    <div class="text-[#5c748a] flex border-none bg-[#eaedf1] items-center justify-center pl-3 rounded-l-xl border-r-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                             <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
                         </svg>
                     </div>
-                    <input name="q" value="{{ query|default:'' }}" placeholder="Buscar por produto ou loja" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#101518] focus:outline-0 focus:ring-0 border-none bg-[#eaedf1] focus:border-none h-full placeholder:text-[#5c748a] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" />
+                    <input name="q" value="{{ query|default:'' }}" placeholder="Buscar por produto ou loja"
+                           class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#101518] focus:outline-0 focus:ring-0 border-none bg-[#eaedf1] focus:border-none h-full placeholder:text-[#5c748a] px-3 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" />
                 </div>
             </label>
         </form>
 
-        <div class="flex gap-3 p-3 pr-4 overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-thin scrollbar-thumb-[#eaedf1] scrollbar-track-transparent">
-            <a href="{% url 'catalog:home' %}#produtos" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if not category %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
+        <div class="flex gap-2 p-2 pr-3 sm:gap-3 sm:p-3 sm:pr-4 overflow-x-auto flex-nowrap whitespace-nowrap scrollbar-thin scrollbar-thumb-[#eaedf1] scrollbar-track-transparent">
+            <a href="{% url 'catalog:home' %}#produtos"
+               class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if not category %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} px-3">
                 <p class="text-sm font-medium leading-normal">Todos os Produtos</p>
             </a>
             {% for c in categories %}
-            <a href="{{ c.get_absolute_url }}#produtos" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if category.slug == c.slug %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} pl-4 pr-4">
+            <a href="{{ c.get_absolute_url }}#produtos"
+               class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl {% if category.slug == c.slug %}bg-[#101518] text-white{% else %}bg-[#eaedf1] text-[#101518]{% endif %} px-3">
                 <p class="text-sm font-medium leading-normal">{{ c.name }}</p>
             </a>
             {% endfor %}
         </div>
 
         <!-- Grid de Produtos -->
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 p-3 sm:p-4">
             {% for product in products %}
                 {% include "catalog/product/_card.html" %}
             {% empty %}
@@ -66,47 +82,44 @@
         </div>
 
         {% if products.has_other_pages %}
-        <div class="flex justify-center mt-6">
+        <div class="flex justify-center mt-4 sm:mt-6">
             <nav class="inline-flex rounded-md shadow-sm" aria-label="Paginação">
                 {% if products.has_previous %}
-                    <a href="?q={{ query }}&page={{ products.previous_page_number }}#produtos" class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Anterior</a>
+                    <a href="?q={{ query }}&page={{ products.previous_page_number }}#produtos" class="relative inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Anterior</a>
                 {% else %}
-                    <span class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-200 bg-gray-100 text-sm font-medium text-gray-400 cursor-not-allowed">Anterior</span>
+                    <span class="relative inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 rounded-l-md border border-gray-200 bg-gray-100 text-sm font-medium text-gray-400 cursor-not-allowed">Anterior</span>
                 {% endif %}
-                
-                <!-- Primeira página -->
+
                 {% if page_range.0 > 1 %}
-                    <a href="?q={{ query }}&page=1#produtos" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">1</a>
+                    <a href="?q={{ query }}&page=1#produtos" class="relative inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">1</a>
                     {% if page_range.0 > 2 %}
-                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500">...</span>
+                        <span class="relative inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500">...</span>
                     {% endif %}
                 {% endif %}
-                
-                <!-- Páginas do range -->
+
                 {% for num in page_range %}
                     {% if products.number == num %}
-                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-[#101518] text-white text-sm font-bold">{{ num }}</span>
+                        <span class="relative inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 border border-gray-300 bg-[#101518] text-white text-sm font-bold">{{ num }}</span>
                     {% else %}
-                        <a href="?q={{ query }}&page={{ num }}#produtos" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">{{ num }}</a>
+                        <a href="?q={{ query }}&page={{ num }}#produtos" class="relative inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">{{ num }}</a>
                     {% endif %}
                 {% endfor %}
-                
-                <!-- Última página -->
+
                 {% if page_range|last < products.paginator.num_pages %}
                     {% if page_range|last < products.paginator.num_pages|add:"-1" %}
-                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500">...</span>
+                        <span class="relative inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500">...</span>
                     {% endif %}
-                    <a href="?q={{ query }}&page={{ products.paginator.num_pages }}#produtos" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">{{ products.paginator.num_pages }}</a>
+                    <a href="?q={{ query }}&page={{ products.paginator.num_pages }}#produtos" class="relative inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">{{ products.paginator.num_pages }}</a>
                 {% endif %}
-                
+
                 {% if products.has_next %}
-                    <a href="?q={{ query }}&page={{ products.next_page_number }}#produtos" class="relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Próxima</a>
+                    <a href="?q={{ query }}&page={{ products.next_page_number }}#produtos" class="relative inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">Próxima</a>
                 {% else %}
-                    <span class="relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-200 bg-gray-100 text-sm font-medium text-gray-400 cursor-not-allowed">Próxima</span>
+                    <span class="relative inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 rounded-r-md border border-gray-200 bg-gray-100 text-sm font-medium text-gray-400 cursor-not-allowed">Próxima</span>
                 {% endif %}
             </nav>
         </div>
         {% endif %}
     </div>
 </div>
-{% endblock %} 
+{% endblock %}
