@@ -18,11 +18,15 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from marketplace import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('dashboard/', include('dashboard.urls', namespace='dashboard')),  # <-- Coloque o dashboard ANTES do catálogo
     path('', include('catalog.urls', namespace='catalog')),
+    
+    # Error pages
+    path('error/<str:error_code>/', views.error_page, name='error_page'),
 ]
 
 if settings.DEBUG:

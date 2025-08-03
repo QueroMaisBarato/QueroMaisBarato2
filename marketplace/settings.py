@@ -54,6 +54,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'marketplace.middleware.ErrorHandlingMiddleware',
 ]
 
 ROOT_URLCONF = "marketplace.urls"
@@ -61,7 +62,7 @@ ROOT_URLCONF = "marketplace.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "marketplace" / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -83,13 +84,13 @@ WSGI_APPLICATION = "marketplace.wsgi.application"
 DATABASES = {
     'default': dj_database_url.config(default=os.environ.get('DATABASE_URL', 'postgresql://queromaisbarato2_user:keVFlRQ8e3ojxtQleWOoGYzJmpJEzIQN@dpg-d11414a4d50c739vo7ig-a/queromaisbarato2'))
 }
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
 
+#DATABASES = {
+ #   'default': {
+  #      'ENGINE': 'django.db.backends.sqlite3',
+   #     'NAME': BASE_DIR / 'db.sqlite3',
+    #}
+#}
 
 
 
@@ -140,6 +141,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Error handling configuration
+HANDLER404 = 'marketplace.views.handler404'
+HANDLER500 = 'marketplace.views.handler500'
+HANDLER403 = 'marketplace.views.handler403'
+HANDLER400 = 'marketplace.views.handler400'
 
 # Media files configuration
 # settings.py

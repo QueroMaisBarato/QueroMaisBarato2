@@ -1,25 +1,44 @@
-<div class="flex flex-col h-full min-h-[370px] max-h-[420px] bg-white rounded-xl shadow-sm p-3 justify-between">
+<div class="product-card bg-white rounded-xl shadow-sm p-3">
+    <!-- Imagem do produto - altura fixa -->
     {% if product.image_url %}
-        <a href="{{ product.get_absolute_url }}" class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl overflow-hidden" style="background-image: url('{{ product.image_url }}')"></a>
+        <a href="{{ product.get_absolute_url }}" class="product-image" style="background-image: url('{{ product.image_url }}')"></a>
     {% else %}
-        <a href="{{ product.get_absolute_url }}" class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl overflow-hidden" style="background-image: url('/static/images/placeholder.jpg')"></a>
+        <a href="{{ product.get_absolute_url }}" class="product-image" style="background-image: url('/static/images/placeholder.jpg')"></a>
     {% endif %}
-    <div class="flex flex-col flex-1 gap-1 mt-2">
-        <p class="text-[#101518] text-base font-medium leading-normal">{{ product.name }}</p>
-        <p class="text-[#5c748a] text-sm font-normal leading-normal">{{ product.description|truncatechars:60 }}</p>
-        <p class="text-[#101518] text-lg font-bold leading-normal mt-1">R$ {{ product.price }}</p>
-        <div class="flex gap-2 mt-1">
+    
+    <!-- Conteúdo do produto - altura flexível mas controlada -->
+    <div class="product-content">
+        <!-- Título do produto - altura fixa, texto truncado -->
+        <h3 class="product-title">
+            {{ product.name }}
+        </h3>
+        
+        <!-- Descrição do produto - altura fixa, texto truncado -->
+        <p class="product-description">
+            {{ product.description|truncatechars:60 }}
+        </p>
+        
+        <!-- Preço - altura fixa -->
+        <p class="product-price">R$ {{ product.price }}</p>
+        
+        <!-- Tags de pagamento - altura fixa -->
+        <div class="payment-tags">
             {% if product.pix %}
-            <span class="flex h-6 items-center justify-center gap-x-2 rounded-xl bg-green-100 text-green-800 px-2 text-xs font-medium">Pix</span>
+            <span class="payment-tag">Pix</span>
             {% endif %}
             {% if product.parcelado %}
-            <span class="flex h-6 items-center justify-center gap-x-2 rounded-xl bg-green-100 text-green-800 px-2 text-xs font-medium">Parcelado</span>
+            <span class="payment-tag">Parcelado</span>
             {% endif %}
         </div>
     </div>
+    
+    <!-- Botão de compra - altura fixa, sempre no final -->
     {% if product.external_url %}
-        <a href="{{ product.external_url }}" target="_blank" rel="noopener noreferrer" class="flex h-10 items-center justify-center rounded-xl bg-[#101518] text-white text-sm font-bold leading-normal mt-2 w-full">
+        <a href="{{ product.external_url }}" target="_blank" rel="noopener noreferrer" class="buy-button">
             Comprar Agora
         </a>
+    {% else %}
+        <!-- Espaçador para manter consistência quando não há botão -->
+        <div class="spacer"></div>
     {% endif %}
 </div>
