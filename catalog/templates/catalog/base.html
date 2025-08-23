@@ -4,12 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}BusqueMaisBarato{% endblock %}</title>
-    <link rel="icon" type="image/svg+xml" href="{% static 'images/logo2.svg' %}" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="{% static 'images/logo2.svg' %}" sizes="32x32">
-    <link rel="icon" type="image/svg+xml" href="{% static 'images/logo2.svg' %}" sizes="48x48">
-    <link rel="icon" type="image/svg+xml" href="{% static 'images/logo2.svg' %}" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="{% static 'images/logo2.svg' %}" sizes="192x192">
+    <title>{% block title %}BusqueMaisBarato - Encontre os Melhores Preços{% endblock %}</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="{% block description %}Quer economizar de verdade? Aqui te mostramos o melhor preço! Encontre ofertas exclusivas e compare preços dos melhores produtos.{% endblock %}">
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="{% block keywords %}preços baixos, ofertas, economia, comparação de preços, produtos baratos, descontos{% endblock %}">
+    
+    <!-- Author -->
+    <meta name="author" content="BusqueMaisBarato">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://busquemaisbarato.com.br/">
+    <meta property="og:title" content="{% block og_title %}BusqueMaisBarato - Encontre os Melhores Preços{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Quer economizar de verdade? Aqui te mostramos o melhor preço! Encontre ofertas exclusivas e compare preços dos melhores produtos.{% endblock %}">
+    <meta property="og:image" content="{% block og_image %}https://busquemaisbarato.com.br{% static 'images/logofinal.png' %}{% endblock %}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logo BusqueMaisBarato - Encontre os Melhores Preços">
+    <meta property="og:site_name" content="BusqueMaisBarato">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://busquemaisbarato.com.br/">
+    <meta property="twitter:title" content="{% block twitter_title %}BusqueMaisBarato - Encontre os Melhores Preços{% endblock %}">
+    <meta property="twitter:description" content="{% block twitter_description %}Quer economizar de verdade? Aqui te mostramos o melhor preço! Encontre ofertas exclusivas e compare preços dos melhores produtos.{% endblock %}">
+    <meta property="twitter:image" content="{% block twitter_image %}https://busquemaisbarato.com.br{% static 'images/logofinal.png' %}{% endblock %}">
+    <meta property="twitter:image:alt" content="BusqueMaisBarato - Encontre os Melhores Preços">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://busquemaisbarato.com.br/">
+    
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Language -->
+    <meta http-equiv="content-language" content="pt-BR">
+    <!-- Favicon Principal -->
+    <link rel="shortcut icon" href="{% static 'images/logofinal.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'images/logofinal.png' %}" type="image/png">
+    <link rel="icon" type="image/png" href="{% static 'images/logofinal.png' %}" sizes="any">
+    <link rel="icon" type="image/png" href="{% static 'images/logofinal.png' %}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{% static 'images/logofinal.png' %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static 'images/logofinal.png' %}" sizes="48x48">
+    <link rel="icon" type="image/png" href="{% static 'images/logofinal.png' %}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{% static 'images/logofinal.png' %}" sizes="192x192">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="{% static 'images/logofinal.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/logofinal.png' %}">
+    
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileImage" content="{% static 'images/logofinal.png' %}">
+    <meta name="msapplication-TileColor" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
@@ -40,7 +90,7 @@
             <header class="flex items-center justify-center whitespace-nowrap border-b border-solid border-b-[#eaedf1] ">
                 <a href="/" class="flex flex-col items-center gap-2 text-[#101518] no-underline">
                     <div class="size-36">
-                        <img src="{% static 'images/logo2.png' %}" alt="Logo Busque Mais Barato" class="w-full h-full object-contain">
+                        <img src="{% static 'images/logofinal.png' %}" alt="Logo Busque Mais Barato" class="w-full h-full object-contain">
                     </div>
                 </a>
             </header>
@@ -70,10 +120,21 @@
                 <div class="hidden md:flex flex-1 justify-center items-end h-full"></div>
             </div>
 
-            <div>
+            <div class="flex flex-col items-center gap-4">
+
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/busquemaisbarato/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-110">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
                 <p class="text-[#5c748a] text-sm sm:text-base font-normal leading-normal">
                     @2025 BusqueMaisBarato. Todos os direitos reservados.
                 </p>
+                
             </div>
         </footer>
 

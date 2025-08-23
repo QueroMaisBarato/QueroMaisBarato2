@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://busquemaisbarato.com.br/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /staticfiles/
+
+# Allow important directories
+Allow: /static/
+Allow: /media/
