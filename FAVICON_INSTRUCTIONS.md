@@ -118,3 +118,4 @@ https://busquemaisbarato.com.br/
 - Aumenta a memorabilidade da marca
 
 Seu favicon com `logofinal.png` já está configurado e funcionando! 🎉
+
