@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}BusqueMaisBarato - Encontre os Melhores Preços{% endblock %}</title>
+    <title>{% block title %}Busque Mais Barato - Encontre os Melhores Preços{% endblock %}</title>
     
     <!-- Meta Description -->
     <meta name="description" content="{% block description %}Quer economizar de verdade? Aqui te mostramos o melhor preço! Encontre ofertas exclusivas e compare preços dos melhores produtos.{% endblock %}">
@@ -55,10 +55,11 @@
       gtag('config', 'AW-17503084450');
     </script>
     
-    <!-- Favicon Principal -->
-    <link rel="shortcut icon" href="{% static 'images/logofinal.png' %}" type="image/png">
-    <link rel="icon" href="{% static 'images/logofinal.png' %}" type="image/png">
-    <link rel="icon" type="image/png" href="{% static 'images/logofinal.png' %}" sizes="any">
+    <!-- Favicon Principal - Redondo -->
+    <link rel="shortcut icon" href="{% static 'images/favicon-round.svg' %}" type="image/svg+xml">
+    <link rel="icon" href="{% static 'images/favicon-round.svg' %}" type="image/svg+xml">
+    <link rel="icon" type="image/svg+xml" href="{% static 'images/favicon-round.svg' %}" sizes="any">
+    <!-- Fallback para navegadores que não suportam SVG -->
     <link rel="icon" type="image/png" href="{% static 'images/logofinal.png' %}" sizes="16x16">
     <link rel="icon" type="image/png" href="{% static 'images/logofinal.png' %}" sizes="32x32">
     <link rel="icon" type="image/png" href="{% static 'images/logofinal.png' %}" sizes="48x48">
