@@ -27,8 +27,8 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 420px;
-    max-height: 420px;
+    min-height: 460px;
+    max-height: 460px;
 }
 
 /* Imagem do produto - altura fixa */
@@ -59,13 +59,12 @@
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.25;
-    height: 2.5rem; /* h-10 */
-    display: flex;
-    align-items: flex-start;
-    overflow: hidden;
+    height: 2.5rem; /* altura exata para 2 linhas */
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Descrição do produto */
@@ -74,13 +73,12 @@
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.25;
-    height: 2rem; /* h-8 */
-    display: flex;
-    align-items: flex-start;
-    overflow: hidden;
+    height: 2.75rem; /* altura generosa para 2 linhas */
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Preço do produto */
@@ -90,6 +88,43 @@
     font-weight: 700;
     line-height: 1;
     margin-top: auto;
+}
+
+/* Informação da loja */
+.store-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.store-label {
+    color: #5c748a;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.store-tag {
+    display: inline-flex;
+    height: 1.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    padding: 0 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+    transition: all 0.2s ease;
+}
+
+.store-tag:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.4);
 }
 
 /* Tags de pagamento */
@@ -146,8 +181,8 @@
 /* Responsividade */
 @media (max-width: 768px) {
     .product-card {
-        min-height: 380px;
-        max-height: 380px;
+        min-height: 420px;
+        max-height: 420px;
     }
     
     .product-image {
@@ -155,12 +190,12 @@
     }
     
     .product-title {
-        height: 2.25rem;
+        height: 2.25rem; /* altura exata para 2 linhas em mobile */
         font-size: 0.875rem;
     }
     
     .product-description {
-        height: 1.75rem;
+        height: 2.5rem; /* altura generosa para 2 linhas em mobile */
         font-size: 0.75rem;
     }
 }

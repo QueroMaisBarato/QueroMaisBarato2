@@ -21,6 +21,8 @@
         <!-- Preço - altura fixa -->
         <p class="product-price">R$ {{ product.price }}</p>
         
+
+        
         <!-- Tags de pagamento - altura fixa -->
         <div class="payment-tags">
             {% if product.pix %}
@@ -30,6 +32,14 @@
             <span class="payment-tag">Parcelado</span>
             {% endif %}
         </div>
+
+        <!-- Informação da loja -->
+        {% if product.loja %}
+        <div class="store-info">
+            <span class="store-label">Vendido e entregue por:</span>
+            <span class="store-tag">{{ product.loja }}</span>
+        </div>
+        {% endif %}
     </div>
     
     <!-- Botão de compra - altura fixa, sempre no final -->
